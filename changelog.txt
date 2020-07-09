@@ -1,0 +1,19 @@
+---------------- JS Tutorial chagngelog -------------------------
+add Variable page {
+ add Variable topic
+} 
+add Getstart page {
+    create Getstart page
+} 
+add Data data types page {
+   add all data types
+}
+add operator page {
+   add all operator 
+}
+add stetment page {
+   add if anf else stetment
+}
+add Es6 page {
+    add  Inheritance topic
+}

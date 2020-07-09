@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- style css -->
+    <link rel="stylesheet" href="../../style.css" />
+    <!-- mat icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- bootstrap 5 css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" />
+    <title>JS TUTORIAL</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid nav_container p-0">
+        <!-- navside bar -->
+        <div class="nav_side animate__animated animate__slideInLeft animate__faster">
+            <span class="material-icons back closed">
+                keyboard_backspace
+            </span>
+            <a href="../../index.html" class="side_logo">
+                <img src="../../src/assets/img/Jslogo.jpg" class="img-fluid" alt="" srcset="" />
+            </a>
+            <div class="navBar_list_bax">
+                <nav class="nav flex-column" id="Topic_Navigation">
+                    <a class="nav-link mb-2" href="">GET STARTED</a>
+                    <a class="nav-link mb-2" href="../VARIABLE/VARIABLE.html">Variables</a>
+                    <a class="nav-link mb-2" href="./../DATA_TYPES/DATA_TYPES.html">data types</a>
+                    <a class="nav-link mb-2" href="../OPERATORS/OPERATORS.html">operators</a>
+                    <a class="nav-link mb-2" href="./../ES6/ES6.html">es6</a>
+                </nav>
+            </div>
+        </div>
+        <!-- main navbar -->
+        <div class="nav_main">
+            <nav class="navbar navbar-light fixed-top NAVBAR">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo" href="../../index.html">JAVA SCRIPT</a>
+                    <button class="navbar-toggler" id="open" type="button">
+                        <span class="material-icons menu">
+                            menu
+                        </span>
+                    </button>
+                </div>
+            </nav>
+            <!--  -->
+            <div class="container-fluid" id="component" style="height: 100vh;">
+                <!----------------------------------------------------------------->
+                <!-----------------------start page content------------------------>
+                <!----------------------------------------------------------------->
+                <div class="row intro">
+                    <div class="col-lg-9 tab-content" style=" background-color: white;">
+                        <h1 class="H-1">Get Started</h1>
+                        <!-- tab 1 -->
+                        <div class="tab-pane active" id="tab1">
+                            <h1 class="topic-nav-heading">INTRODUCTION</h1>
+                            <h3>Web Based Scripting Language</h3>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-6 col-12">
+                                        <img src="../../src/assets/img/Client-server-model.png" class="img-fluid imgcustom" alt=""
+                                            srcset="">
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <img src="../../src/assets/img/server-side-model.png" class="img-fluid imgcustom" alt=""
+                                            srcset="">
+                                    </div>
+                                </div>
+                            </div>
+                            <p>java script is client Scripting Language and event based programming language</p>
+                            <hr>
+                            <h3 class="type">java script application type for development</h3>
+                            <h5 class="type_item">1. web development</h5>
+                            <h5 class="type_item">2.  desktop development</h5>
+                            <h5 class="type_item">3.  mobile development</h5>
+                            <hr>
+
+                            <h3 class="type">Use javaScript in web development</h3>
+                            <h5 class="type_item">1. form validation</h5>
+                            <h5 class="type_item">2. maps</h5>
+                            <h5 class="type_item">3. chart in graphs</h5>
+                            <h5 class="type_item">4. animated 2D/3D graphics</h5>
+                            <h5 class="type_item">5. web Game development</h5>
+                            <h5 class="type_item">6. video and audio player and more...</h5>   
+                        </div>
+                        <!-- tab 2 -->
+                        <div class="tab-pane" id="tab2">
+                            <h1 class="topic-nav-heading">DEVELOPMENT REQUIREMENT</h1>
+                            <h3 class="type">development requirement</h3>
+                            <h5 class="type_item">1. code editor</h5>
+                            <h5 class="type_item">2. Web browser</h5>
+                        
+                           
+                        </div>
+                        <!-- tab 3 -->
+                        <div class="tab-pane" id="tab3">
+                            <h1 class="topic-nav-heading">IMPLEMENTATION</h1>
+                            <h3 class="type">two methood in javascript for implement</h3>
+                            <h5 class="type_item">1. internal page javascript</h5>
+                            <h5 class="type_item">2. external page javascript</h5>
+                            <hr>
+                            <h5>1. internal page javascript</h5>
+                            <div id="internalJs" class="SCode">
+                                <script type="module">
+                                    import Tests from './GETSTART.js';
+                                    const source_code = new Tests();
+                                    let atat = document.querySelector('#internalJs');
+                                    atat.innerHTML = `
+                <section class="source-code" data-doc="index.html">${source_code.c_header()}</section>
+                <pre><code class="language-html">${source_code.Ijs()}</code></pre>`;
+                                </script>
+                            </div>
+                            <h5>2. external page javascript</h5>
+                            <div id="externalJs" class="SCode">
+                                <script type="module">
+                                    import Tests from './GETSTART.js';
+                                    const source_code = new Tests();
+                                    let atat = document.querySelector('#externalJs');
+                                    atat.innerHTML = `
+                <section class="source-code" data-doc="index.html">${source_code.c_header()}</section>
+                <pre><code class="language-html">${source_code.Ejs()}</code></pre>`;
+                                </script>
+                            </div>
+                            <div id="mainJs" class="SCode">
+                                <script type="module">
+                                    import Tests from './GETSTART.js';
+                                    const source_code = new Tests();
+                                    let atat = document.querySelector('#mainJs');
+                                    atat.innerHTML = `
+                <section class="source-code" data-doc="main.js">${source_code.c_header()}</section>
+                <pre><code class="language-html">#code here</code></pre>`;
+                                </script>
+                            </div>
+                            <p>
+                                Lorem <span class="flie">ipsum dolor</span> sit amet
+                                consectetur adipisicing elit. Soluta iure a nulla
+                                <span class="imp">delectus ut libero</span> eligendi nostrum
+                                qui, temporibus vel illo eveniet quam eaque sapiente nisi
+                                earum ab labore enim.
+                            </p>
+                            <p>
+                                Lorem <span class="flie">ipsum dolor</span> sit amet
+                                consectetur adipisicing elit. Soluta iure a nulla
+                                <span class="imp">delectus ut libero</span> eligendi nostrum
+                                qui, temporibus vel illo eveniet quam eaque sapiente nisi
+                                earum ab labore enim.
+                            </p>
+                           
+                            
+                        </div>
+                 <!-- tab 4 -->
+                 <div class="tab-pane" id="tab4">
+                    <h1 class="topic-nav-heading">HELLO WORD</h1>
+                    <div id="helloJs" class="SCode">
+                        <script type="module">
+                            import Tests from './GETSTART.js';
+                            const source_code = new Tests();
+                            let atat = document.querySelector('#helloJs');
+                            atat.innerHTML = `
+        <section class="source-code" data-doc="main.js">${source_code.c_header()}</section>
+        <pre><code class="language-javascript">document.write('hello');</code></pre>`;
+                        </script>
+                    </div>
+                    <h3></h3>
+                </div>
+                    </div>
+                    <div class="col-lg-3 Get_scroll CenterY" style="background: #dfdbdb;">
+                        <div class="list_box Get_scroll">
+                            <nav class="nav flex-column" id="Get_topic"></nav>
+                        </div>
+                    </div>
+                </div>
+                <!----------------------------------------------------------------->
+                <!-----------------------end page content------------------------>
+                <!----------------------------------------------------------------->
+            </div>
+        </div>
+        <!--  -->
+    </div>
+</body>
+<!-- Component.js -->
+<script src="./GETSTART.js"></script>
+<!-- main.js -->
+<script src="../../main.js"></script>
+<!-- prism js -->
+<script src="../../src/assets/Js/prism.js"></script>
+<!-- sidenav -->
+<script src="../../src/assets/Js/sidenav.js"></script>
+<!-- here bootstrap js -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+
+</html>

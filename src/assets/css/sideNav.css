@@ -1,0 +1,51 @@
+.nav_container {
+  height: 100vh;
+  background-color: white;
+  position: relative;
+}
+.nav_side {
+  display: none;
+}
+.nav_side_remove {
+  display: block;
+  height: inherit;
+  width: 320px;
+  background-color: #21242d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  border-right: 2px solid white;
+}
+
+#close {
+  cursor: pointer;
+}
+#Topic_Navigation .nav-link {
+  color: #E7C634;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#Topic_Navigation .nav-link:hover {
+  color: #E7C634;
+  background-color: #3f434e;
+}
+/* .nav_main{
+    
+} */
+.back {
+  float: right;
+  font-size: 43px !important;
+  padding-right: 20px;
+  color: #E7C634;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  animation: shakeX;
+  animation-duration: 3s; /* don't forget to set a duration! */
+}
+/* @media ()991 */
+@media only screen and (max-width: 991px) {
+  .list_box {
+    display: none;
+  }
+}

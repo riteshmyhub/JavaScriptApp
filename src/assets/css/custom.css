@@ -1,0 +1,56 @@
+.NAVBAR {
+  z-index: 80 !important;
+  background-color: #21242D;
+}
+.logo {
+  color: #f0da50 !important;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.menu {
+  color: #f0da50;
+  font-size: 36px !important;
+}
+.navbar-toggler {
+  border: 1px solid transparent !important;
+  padding: 0px !important;
+}
+.btn {
+  outline: none !important;
+}
+/* component */
+.list_box {
+  background-color: #dfdbdb;
+  width: 100%;
+  padding: 10px 0px 15px 0px;
+  height: 420px;
+  text-transform: uppercase;
+}
+.list_box a {
+  color: #20232a;
+  font-size: 14px;
+  letter-spacing: 1.12px;
+  font-weight: 700;
+  position: relative;
+}
+.list_box a:hover::before {
+  content: '';
+  border: 1px solid #20232a;
+  position: absolute;
+  top: 10px;
+  left: 6px;
+  height: 18px;
+  z-index: 0;
+}
+.list_box a:focus{
+  color: blue;
+}
+.list_box a:focus::before{
+  content: '';
+  border: 1px solid #20232a;
+  position: absolute;
+  top: 10px;
+  left: 6px;
+  height: 18px;
+  z-index: 0;
+}
