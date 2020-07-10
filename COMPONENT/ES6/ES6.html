@@ -171,6 +171,22 @@
                                 </script>
                             </div>
                         </div>
+                         <!-- tab 4 -->
+                         <div class="tab-pane" id="tab5">
+                            <h1 class="topic-nav-heading">Method Overriding</h1>
+                            <img src="../../src/assets/img/Method_Overriding.png" class="img-fluid" alt="" srcset="">
+                            <p>In Overriding method , call parent class of method in child class than Overriding that method</p>
+                            <div id="Method_Over" class="SCode">
+                                <script type="module">
+                                    import Ecmascript from './ES6.js';
+                                    const source_code = new Ecmascript();
+                                    let atat = document.querySelector('#Method_Over');
+                                    atat.innerHTML = `
+              <section class="source-code" data-doc="main.js">${source_code.c_header()}</section>
+              <pre><code class="language-js">${source_code.Method_Over()}</code></pre>`;
+                                </script>
+                            </div>
+                         </div>
                     </div>
                     <!-- tab side bar -->
                     <div class="col-lg-3 Get_scroll CenterY" style="background: #dfdbdb;">

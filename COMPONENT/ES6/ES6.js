@@ -3,6 +3,7 @@ const Topic = [
   { name: 'Parameterized Constructor' },
   { name: 'class Inheritance' },
   { name: 'Super Method' },
+  { name: 'Method Overriding' },
 ];
 (function () {
   const apply = document.querySelector('#Es_topic');
@@ -41,8 +42,12 @@ export default class Ecmascript {
     return `${Inheri_Ex}`;
   }
   // superMethod
-  SuperPro(){
-     return `${supreM}`
+  SuperPro() {
+    return `${supreM}`;
+  }
+  //Method Overriding
+  Method_Over() {
+    return `${Method_Overriding}`;
   }
 }
 
@@ -151,4 +156,19 @@ class customer extends products {
   }
 }
 const user = new customer('milk', 1000);
-document.write(user.addItem());`
+document.write(user.addItem());`;
+
+const Method_Overriding = `
+class parant {
+  method() {
+    return "this is method";
+  }
+}
+
+class child extends parant {
+  method() {
+    return "this is Overriding method";
+  }
+}
+const user = new parant();
+document.write(user.method());`;
