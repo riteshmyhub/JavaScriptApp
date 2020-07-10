@@ -17,4 +17,5 @@ add stetment page {
 add Es6 page {
     add Inheritance topic
     add super() methood
+    add Method Overriding
 }
