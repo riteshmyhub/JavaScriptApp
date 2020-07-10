@@ -152,6 +152,25 @@
                              <h5 class="type_item">Array</h5>
                              <p>This Built-in Object is like parent class we can Inherit to this Class in Custom child class.</p>
                         </div>
+                        <!-- tab 4 -->
+                        <div class="tab-pane" id="tab4">
+                            <h1 class="topic-nav-heading">Super Method</h1>
+                            <p>By <span class="imp">super()</span> Method , Inherit two class of constructor</p>
+                            <p>This <span class="imp">super()</span> Method is used for initialize to parent class constructor</p>
+                            <p>This <span class="imp">super()</span>Method always use in child class of constructor.</p>
+                            <p><span class="imp">super()</span> method is always place on top in constructor than put other properties</p>
+                            <p>In <span class="imp">super()</span>Method , pass that's Parameter that pass in parent class constructor Parameter</p>
+                            <div id="SuperPro" class="SCode">
+                                <script type="module">
+                                    import Ecmascript from './ES6.js';
+                                    const source_code = new Ecmascript();
+                                    let atat = document.querySelector('#SuperPro');
+                                    atat.innerHTML = `
+              <section class="source-code" data-doc="main.js">${source_code.c_header()}</section>
+              <pre><code class="language-js">${source_code.SuperPro()}</code></pre>`;
+                                </script>
+                            </div>
+                        </div>
                     </div>
                     <!-- tab side bar -->
                     <div class="col-lg-3 Get_scroll CenterY" style="background: #dfdbdb;">

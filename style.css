@@ -78,7 +78,7 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 p::before{
-  content:"\f111\00a0\00a0";
+  content:"\f096\00a0\00a0";
   font-family: FontAwesome;
   font-size: 11px;
 }

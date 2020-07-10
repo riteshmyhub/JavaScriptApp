@@ -15,5 +15,6 @@ add stetment page {
    add if anf else stetment
 }
 add Es6 page {
-    add  Inheritance topic
+    add Inheritance topic
+    add super() methood
 }
