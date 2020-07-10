@@ -59,7 +59,7 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
   text-transform: capitalize;
   position: relative;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
 }
 .H-1::before {
   content: '';
@@ -77,12 +77,12 @@ p {
   word-wrap: 0px;
   font-family: 'Montserrat', sans-serif;
 }
-p::before{
-  content:"\f096\00a0\00a0";
+p::before {
+  content: '\f096\00a0\00a0';
   font-family: FontAwesome;
   font-size: 11px;
 }
-.SCode{
+.SCode {
   padding: 12px 0px 17px 0px;
 }
 pre {
@@ -143,11 +143,11 @@ pre {
 .code_dot:nth-child(3) {
   color: #34c848;
 }
-.topic-nav-heading{
+.topic-nav-heading {
   padding: 20px 0px 16px 19px;
   position: relative;
 }
-.topic-nav-heading::before{
+.topic-nav-heading::before {
   content: '';
   position: absolute;
   border: 3px solid #34c848;
@@ -155,6 +155,22 @@ pre {
   top: 24px;
   left: 0px;
 }
-.imgcustom{
+.imgcustom {
   padding: 12px 0px 12px 0px;
+}
+@media screen and (max-width: 768px) {
+  .will_only_desktop {
+    display: none;
+  }
+  .will_only_mobile {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .will_only_desktop {
+    display: block;
+  }
+  .will_only_mobile {
+    display: none;
+  }
 }
