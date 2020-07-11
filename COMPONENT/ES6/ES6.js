@@ -4,6 +4,7 @@ const Topic = [
   { name: 'class Inheritance' },
   { name: 'Super Method' },
   { name: 'Method Overriding' },
+  { name: 'Static Method' },
 ];
 (function () {
   const apply = document.querySelector('#Es_topic');
@@ -48,6 +49,10 @@ export default class Ecmascript {
   //Method Overriding
   Method_Over() {
     return `${Method_Overriding}`;
+  }
+  // static Methood
+  static_m(){
+   return `${staticMethood}`
   }
 }
 
@@ -172,3 +177,11 @@ class child extends parant {
 }
 const user = new parant();
 document.write(user.method());`;
+const staticMethood = `
+class Testing {
+  constructor() {}
+  static methood() {
+    return 'hello';
+  }
+}
+document.write(Testing.methood());`;
