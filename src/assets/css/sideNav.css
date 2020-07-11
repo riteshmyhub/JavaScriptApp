@@ -72,9 +72,6 @@
   }
 }
 @media only screen and (max-width: 600px) {
-  .nav_side_remove {
-    width: 100%;
-  } 
 }
 #open {
   position: relative;
