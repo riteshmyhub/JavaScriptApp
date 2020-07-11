@@ -40,15 +40,18 @@
                 <div class="container-fluid">
                     <a class="navbar-brand logo" id="open">
                         <span class="material-icons menu">
-                            menu 
+                            menu
                         </span>
                     </a>
                     <a class="will_only_mobile">
-                        <span class="material-icons topic_list_btn" data-toggle="collapse" href=".list_box" role="button" aria-expanded="false" aria-controls="list_box">
+                        <span class="material-icons topic_list_btn" onclick="openList()">
                             more_vert
                         </span>
+                        <span class="material-icons close_btn" onclick="closeList()">
+                            power_settings_new
+                        </span>
                     </a>
-                  </div>
+                </div>
             </nav>
             <!--  -->
             <div class="container-fluid" id="component" style="height: 100vh;">
@@ -58,7 +61,7 @@
                 <div class="row intro">
                     <div class="col-lg-9 tab-content" style=" background-color: white;">
                         <h1 class="H-1">Data Types</h1>
-                        
+
                         <!-- tab 1 -->
                         <div class="tab-pane active" id="tab1">
                             <h1 class="topic-nav-heading">String</h1>
@@ -87,7 +90,8 @@
                 <pre><code class="language-js">${source_code.Dnumber()}</code></pre>`;
                                 </script>
                             </div>
-                            <p>In number data type, pass any number types value. <span class="imp">like - 112 , 3.31 , -12</span></p>
+                            <p>In number data type, pass any number types value. <span class="imp">like - 112 , 3.31 ,
+                                    -12</span></p>
                         </div>
                         <!-- tab 3 -->
                         <div class="tab-pane" id="tab3">
@@ -117,7 +121,8 @@
                 <pre><code class="language-js">${source_code.DArray()}</code></pre>`;
                                 </script>
                             </div>
-                            <p>In java script <span class="imp">array is always show object when use typeof funtion</span> but this in array.</p>
+                            <p>In java script <span class="imp">array is always show object when use typeof
+                                    funtion</span> but this in array.</p>
                         </div>
                         <!-- tab 5 -->
                         <div class="tab-pane" id="tab5">
@@ -133,8 +138,8 @@
                                 </script>
                             </div>
                         </div>
-                         <!-- tab 6 -->
-                         <div class="tab-pane" id="tab6">
+                        <!-- tab 6 -->
+                        <div class="tab-pane" id="tab6">
                             <h1 class="topic-nav-heading">Null</h1>
                             <div id="null" class="SCode">
                                 <script type="module">
@@ -147,10 +152,10 @@
                                 </script>
                             </div>
                             <p>In null data type , pass only <span class="imp"> (null)</span> value.</p>
-                            
+
                         </div>
-                         <!-- tab 7 -->
-                         <div class="tab-pane" id="tab7">
+                        <!-- tab 7 -->
+                        <div class="tab-pane" id="tab7">
                             <h1 class="topic-nav-heading">Undefined</h1>
                             <div id="Unde" class="SCode">
                                 <script type="module">
@@ -184,7 +189,11 @@
                     <!-- tab side bar -->
                     <div class="col-lg-3 Get_scroll CenterY" style="background: #dfdbdb;">
                         <div class="list_box Get_scroll">
-                            <nav class="nav flex-column" id="dataType_topic"></nav>
+                            <nav class="nav flex-column" id="dataType_topic">
+                                <button class="btn list_closed">
+
+                                </button>
+                            </nav>
                         </div>
                     </div>
                     <!-- tab side bar -->
