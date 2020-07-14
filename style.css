@@ -163,6 +163,10 @@ pre {
 .imgcustom {
   padding: 12px 0px 12px 0px;
 }
+.Get-Started{
+  text-transform: uppercase;
+   font-weight: 800 !important;
+}
 @media screen and (max-width: 768px) {
   .will_only_desktop {
     display: none;
