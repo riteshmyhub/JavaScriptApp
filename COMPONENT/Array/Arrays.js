@@ -1,18 +1,3 @@
-const Topic = [
-    { name: 'what is array' },
-    { name: 'Declaration and Initialization of Array' },
-  ];
-  (function () {
-    const apply = document.querySelector('#array_topic');
-    for (let i = 0; i < Topic.length; i++) {
-      //  template
-      let template = `<a class="nav-link mb-2" onclick="closeList()" data-toggle="tab" href="#tab${
-        i + 1
-      }">${Topic[i].name}</a>`;
-      //  template output
-      apply.innerHTML += template;
-    }
-  })();
   // ====================================================================
   // =====================binding source code============================
   // ====================================================================

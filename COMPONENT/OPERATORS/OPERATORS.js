@@ -1,21 +1,4 @@
-const Topic = [
-  { name: 'Arithmetic Operators' },
-  { name: 'Comparison(Reletional) Operators' },
-  { name: 'logical Operators' },
-  { name: 'Bitwise Operators' },
-  { name: 'Assignment Operators' },
-];
-(function () {
-  const apply = document.querySelector('#Operators_topic');
-  for (let i = 0; i < Topic.length; i++) {
-    //  template
-    let template = `<a class="nav-link mb-2" onclick="closeList()" data-toggle="tab" href="#tab${
-      i + 1
-    }">${Topic[i].name}</a>`;
-    //  template output
-    apply.innerHTML += template;
-  }
-})();
+
 // ====================================================================
 // =====================binding source code============================
 // ====================================================================

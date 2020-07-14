@@ -90,7 +90,18 @@
                     <!-- tab side bar -->
                     <div class="col-lg-3 Get_scroll CenterY" style="background: #dfdbdb;">
                         <div class="list_box Get_scroll">
-                            <nav class="nav flex-column" id="Es_topic"></nav>
+                            <nav class="nav flex-column" id="state_topic">
+                                <script type="module">
+                                import GetTopicList from '../../main.js';
+                                    // new class Obj
+                                const topicList = new GetTopicList([
+                                  { name: 'if Statements' },
+                                  { name: 'Else Statement' }, 
+                                ]);
+                                    // get element id
+                                topicList.listing('#state_topic');
+                                </script>                      
+                            </nav>
                         </div>
                     </div>
                     <!-- tab side bar -->

@@ -101,7 +101,16 @@
                     <div class="col-lg-3 Get_scroll CenterY" style="background: #dfdbdb;">
                         <div class="list_box Get_scroll">
                             <nav class="nav flex-column" id="array_topic">
-
+                                <script type="module">
+                                import GetTopicList from '../../main.js';
+                                // new class Obj
+                                const topicList = new GetTopicList([
+                                { name: 'what is array' },
+                                { name: 'Declaration and Initialization of Array' },
+                                ]);
+                                // get element id
+                                topicList.listing('#array_topic');
+                                </script>
                             </nav>
                         </div>
                     </div>

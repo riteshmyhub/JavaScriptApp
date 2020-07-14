@@ -40,7 +40,7 @@
                 <div class="container-fluid">
                     <a class="navbar-brand logo" id="open">
                         <span class="material-icons menu">
-                            menu 
+                            menu
                         </span>
                     </a>
                     <a class="will_only_mobile">
@@ -48,7 +48,7 @@
                             more_vert
                         </span>
                     </a>
-                  </div>
+                </div>
             </nav>
             <!--  -->
             <div class="container-fluid" id="component" style="height: 100vh;">
@@ -84,31 +84,34 @@
                             <h3 class="type">Reletional Operators</h3>
                             <h6 class="type_item"><span class="imp">(<)< </span> less than</h5>
 
-                            <h6 class="type_item"><span class="imp">(>)</span> greater than</h6>
+                                        <h6 class="type_item"><span class="imp">(>)</span> greater than</h6>
 
-                            <h6 class="type_item"><span class="imp">(==)</span> equal</h6>
+                                        <h6 class="type_item"><span class="imp">(==)</span> equal</h6>
 
-                            <h6 class="type_item"><span class="imp">(<=)< </span> less than or equal</h5>
+                                        <h6 class="type_item"><span class="imp">(<=)< </span> less than or equal</h5>
 
-                            <h6 class="type_item"><span class="imp">(>=)</span> greater than or equal</h6>
+                                                    <h6 class="type_item"><span class="imp">(>=)</span> greater than or
+                                                        equal</h6>
 
-                            <h6 class="type_item"><span class="imp">(!=)</span> not equal</h6>
+                                                    <h6 class="type_item"><span class="imp">(!=)</span> not equal</h6>
 
-                            <h6 class="type_item"><span class="imp">(===)</span> equal value and same data type</h6>
-                            
-                            <h6 class="type_item"><span class="imp">(!==)</span> not equal value and not same data type
-                            </h6>
+                                                    <h6 class="type_item"><span class="imp">(===)</span> equal value and
+                                                        same data type</h6>
 
-                            <div id="rela" class="SCode">
-                                <script type="module">
-                                    import Operators from './OPERATORS.js';
-                                    const source_code = new Operators();
-                                    let atat = document.querySelector('#rela');
-                                    atat.innerHTML = `
+                                                    <h6 class="type_item"><span class="imp">(!==)</span> not equal value
+                                                        and not same data type
+                                                    </h6>
+
+                                                    <div id="rela" class="SCode">
+                                                        <script type="module">
+                                                            import Operators from './OPERATORS.js';
+                                                            const source_code = new Operators();
+                                                            let atat = document.querySelector('#rela');
+                                                            atat.innerHTML = `
                 <section class="source-code" data-doc="main.js">${source_code.c_header()}</section>
                 <pre><code class="language-js">${source_code.rela()}</code></pre>`;
-                                </script>
-                            </div>
+                                                        </script>
+                                                    </div>
                         </div>
                         <!-- tab 3 -->
                         <div class="tab-pane" id="tab3">
@@ -204,49 +207,63 @@
                             <h1 class="topic-nav-heading">Assignment Operators</h1>
                             <p>Combination of Arithmetic Operators and equal sign , that is call Assignment Operators.
                             </p>
-                              <hr>
-                              <h2 class="type">assignment table</h2>
-                                <table class="table table-bordered" id="assign">
-                                    <tr>
-                                        <th scope="col">s.no</th>
-                                        <th scope="col">Operators</th>
-                                        <th scope="col">Example</th>
-                                        <th scope="col">same like</th>
-                                    </tr>
-                                    <!--  dynamic table row -->
-                                    <script type="module">
-                                        // import to class
-                                        import Operators from './OPERATORS.js';
+                            <hr>
+                            <h2 class="type">assignment table</h2>
+                            <table class="table table-bordered" id="assign">
+                                <tr>
+                                    <th scope="col">s.no</th>
+                                    <th scope="col">Operators</th>
+                                    <th scope="col">Example</th>
+                                    <th scope="col">same like</th>
+                                </tr>
+                                <!--  dynamic table row -->
+                                <script type="module">
+                                    // import to class
+                                    import Operators from './OPERATORS.js';
 
-                                        // new object of class
-                                        const source_code = new Operators();
+                                    // new object of class
+                                    const source_code = new Operators();
 
-                                        //array of object access 
-                                        let list = source_code.assign();
-                                        
-                                        // target to table
-                                        let getlist = document.querySelector('#assign');
+                                    //array of object access 
+                                    let list = source_code.assign();
 
-                                        // dynamic table row
-                                        for (let i = 0; i < list.length; i++) {
-                                            getlist.innerHTML += `
+                                    // target to table
+                                    let getlist = document.querySelector('#assign');
+
+                                    // dynamic table row
+                                    for (let i = 0; i < list.length; i++) {
+                                        getlist.innerHTML += `
                                         <tr>
                                           <td>${list[i].sno}</td>
                                           <td>${list[i].Operators}</td>
                                           <td>${list[i].Example}</td>
                                           <td>${list[i].same_like}</td>
                                         </tr>`
-                                        }
-                                    </script>
-                                    <!--  dynamic table row -->
-                                </table>
-                         
+                                    }
+                                </script>
+                                <!--  dynamic table row -->
+                            </table>
+
                         </div>
                     </div>
                     <!-- tab side bar -->
                     <div class="col-lg-3 Get_scroll CenterY" style="background: #dfdbdb;">
                         <div class="list_box Get_scroll">
-                            <nav class="nav flex-column" id="Operators_topic"></nav>
+                            <nav class="nav flex-column" id="Operators_topic">
+                                <script type="module">
+                                    import GetTopicList from '../../main.js';
+                                    // new class Obj
+                                    const topicList = new GetTopicList([
+                                        { name: 'Arithmetic Operators' },
+                                        { name: 'Comparison(Reletional) Operators' },
+                                        { name: 'logical Operators' },
+                                        { name: 'Bitwise Operators' },
+                                        { name: 'Assignment Operators' },
+                                    ]);
+                                    // get element id
+                                    topicList.listing('#Operators_topic');
+                                </script>
+                            </nav>
                         </div>
                     </div>
                     <!-- tab side bar -->

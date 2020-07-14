@@ -214,7 +214,22 @@
                     <!-- tab side bar -->
                     <div class="col-lg-3 Get_scroll CenterY" style="background: #dfdbdb;">
                         <div class="list_box Get_scroll">
-                            <nav class="nav flex-column" id="Es_topic"></nav>
+                            <nav class="nav flex-column" id="Es_topic">
+                                <script type="module">
+                                import GetTopicList from '../../main.js';
+                                    // new class Obj
+                                   const topicList = new GetTopicList([
+                                   { name: 'class' },
+                                   { name: 'Parameterized Constructor' },
+                                   { name: 'class Inheritance' },
+                                   { name: 'Super Method' },
+                                   { name: 'Method Overriding' },
+                                   { name: 'Static Method' },
+                                    ]);
+                                    // get element id
+                                    topicList.listing('#Es_topic');
+                                </script>
+                            </nav>
                         </div>
                     </div>
                     <!-- tab side bar -->

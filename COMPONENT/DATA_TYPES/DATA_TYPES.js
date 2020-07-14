@@ -1,25 +1,3 @@
-const Topic = [
-  { name: 'string' },
-  { name: 'Number' },
-  { name: 'Boolean' },
-  { name: 'Array' },
-  { name: 'Object' },
-  { name: 'Null' },
-  { name: 'Undefined ' },
-  { name: 'typeof' },
-];
-(function () {
-  const apply = document.querySelector('#dataType_topic');
-  for (let i = 0; i < Topic.length; i++) {
-    //  template
-    let template = `<a class="nav-link mb-2" onclick="closeList()" data-toggle="tab" href="#tab${
-      i + 1
-    }">${Topic[i].name}</a>`;
-    //  template output
-    apply.innerHTML += template;
-    
-  }
-})();
 // ====================================================================
 // =====================binding source code============================
 // ====================================================================

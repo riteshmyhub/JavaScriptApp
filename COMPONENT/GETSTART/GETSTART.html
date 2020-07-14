@@ -173,7 +173,20 @@
                     </div>
                     <div class="col-lg-3 Get_scroll CenterY" style="background: #dfdbdb;">
                         <div class="list_box Get_scroll">
-                            <nav class="nav flex-column" id="Get_topic"></nav>
+                            <nav class="nav flex-column" id="Get_topic">
+                                <script type="module">
+                                import GetTopicList from '../../main.js';
+                                    // new class Obj
+                                const topicList = new GetTopicList([
+                                  { name: 'introduction' },
+                                  { name: 'development requirement' },
+                                  { name: 'Implementation' },
+                                  { name: 'hello word' },
+                                ]);
+                                    // get element id
+                                topicList.listing('#Get_topic');
+                                </script>
+                            </nav>
                         </div>
                     </div>
                 </div>
