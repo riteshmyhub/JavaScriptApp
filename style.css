@@ -195,8 +195,7 @@ pre {
 }
 @media only screen and (max-width: 600px) {
   .BGI {
-    background-image: none;
-    background-color: #191919;
+    background-image: url(./src/assets/img/jsMob.png);
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
