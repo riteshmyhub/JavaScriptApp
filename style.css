@@ -27,6 +27,11 @@ body {
   justify-content: start;
   align-items: center;
 }
+.CenterYX {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .row_rev {
   flex-direction: row-reverse;
 }
@@ -172,5 +177,15 @@ pre {
   }
   .will_only_mobile {
     display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .BGI {
+    background-image: none;
+    background-color: #191919;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
