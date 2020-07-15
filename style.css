@@ -177,6 +177,22 @@ pre {
   padding: 0px 0px 0px 20px;
   font-weight: 800;
 }
+.note{
+  padding: 36px 4px 10px 4px;
+  background-color: rgb(243, 216, 129);
+  position: relative;
+}
+.note::before{
+  content: 'note';
+  background-color: #2D2D2D;
+  color: white;
+  padding: 6px 10px 6px 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 @media screen and (max-width: 768px) {
   .will_only_desktop {
     display: none;

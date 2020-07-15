@@ -66,11 +66,8 @@
                             <div id="str" class="SCode">
                                 <script type="module">
                                     import DataType from './DATA_TYPES.js';
-                                    const source_code = new DataType();
-                                    let atat = document.querySelector('#str');
-                                    atat.innerHTML = `
-                <section class="source-code" data-doc="index.html">${source_code.c_header()}</section>
-                <pre><code class="language-js">${source_code.Dstring()}</code></pre>`;
+                                    const Scode = new DataType('#str');
+                                    Scode.source_code('main.js',Scode.Dstring());
                                 </script>
                             </div>
                             <p>In String data , text type pass any text types value in " "</p>
@@ -81,11 +78,8 @@
                             <div id="num" class="SCode">
                                 <script type="module">
                                     import DataType from './DATA_TYPES.js';
-                                    const source_code = new DataType();
-                                    let atat = document.querySelector('#num');
-                                    atat.innerHTML = `
-                <section class="source-code" data-doc="index.html">${source_code.c_header()}</section>
-                <pre><code class="language-js">${source_code.Dnumber()}</code></pre>`;
+                                    const Scode = new DataType('#num');
+                                    Scode.source_code('main.js',Scode.Dnumber());
                                 </script>
                             </div>
                             <p>In number data type, pass any number types value. <span class="imp">like - 112 , 3.31 ,
@@ -97,11 +91,7 @@
                             <div id="bool" class="SCode">
                                 <script type="module">
                                     import DataType from './DATA_TYPES.js';
-                                    const source_code = new DataType();
-                                    let atat = document.querySelector('#bool');
-                                    atat.innerHTML = `
-                <section class="source-code" data-doc="index.html">${source_code.c_header()}</section>
-                <pre><code class="language-js">${source_code.DBoolean()}</code></pre>`;
+                                    const Scode = new DataType('#bool');Scode.source_code('main.js',Scode.DBoolean());
                                 </script>
                             </div>
                             <p>In Boolean data type , pass only <span class="imp">(true or false)</span> value.</p>
@@ -112,11 +102,8 @@
                             <div id="Arr" class="SCode">
                                 <script type="module">
                                     import DataType from './DATA_TYPES.js';
-                                    const source_code = new DataType();
-                                    let atat = document.querySelector('#Arr');
-                                    atat.innerHTML = `
-                <section class="source-code" data-doc="index.html">${source_code.c_header()}</section>
-                <pre><code class="language-js">${source_code.DArray()}</code></pre>`;
+                                    const Scode = new DataType('#Arr');
+                                    Scode.source_code('main.js',Scode.DArray());
                                 </script>
                             </div>
                             <p>In java script <span class="imp">array is always show object when use typeof
@@ -128,11 +115,8 @@
                             <div id="Obj" class="SCode">
                                 <script type="module">
                                     import DataType from './DATA_TYPES.js';
-                                    const source_code = new DataType();
-                                    let atat = document.querySelector('#Obj');
-                                    atat.innerHTML = `
-                <section class="source-code" data-doc="index.html">${source_code.c_header()}</section>
-                <pre><code class="language-js">${source_code.DObj()}</code></pre>`;
+                                    const Scode = new DataType('#Obj');
+                                    Scode.source_code('main.js',Scode.DObj());
                                 </script>
                             </div>
                         </div>
@@ -142,11 +126,8 @@
                             <div id="null" class="SCode">
                                 <script type="module">
                                     import DataType from './DATA_TYPES.js';
-                                    const source_code = new DataType();
-                                    let atat = document.querySelector('#null');
-                                    atat.innerHTML = `
-                <section class="source-code" data-doc="index.html">${source_code.c_header()}</section>
-                <pre><code class="language-js">${source_code.DNull()}</code></pre>`;
+                                    const Scode = new DataType('#null');
+                                    Scode.source_code('main.js',Scode.DNull());
                                 </script>
                             </div>
                             <p>In null data type , pass only <span class="imp"> (null)</span> value.</p>
@@ -158,11 +139,8 @@
                             <div id="Unde" class="SCode">
                                 <script type="module">
                                     import DataType from './DATA_TYPES.js';
-                                    const source_code = new DataType();
-                                    let atat = document.querySelector('#Unde');
-                                    atat.innerHTML = `
-                <section class="source-code" data-doc="index.html">${source_code.c_header()}</section>
-                <pre><code class="language-js">${source_code.DUndefined()}</code></pre>`;
+                                    const Scode = new DataType('#Unde');
+                                    Scode.source_code('main.js',Scode.DUndefined());
                                 </script>
                             </div>
                             <p>In Undefined data type , pass only <span class="imp"> (Undefined)</span> value.</p>
@@ -175,11 +153,8 @@
                             <div id="Typeof" class="SCode">
                                 <script type="module">
                                     import DataType from './DATA_TYPES.js';
-                                    const source_code = new DataType();
-                                    let atat = document.querySelector('#Typeof');
-                                    atat.innerHTML = `
-                <section class="source-code" data-doc="index.html">${source_code.c_header()}</section>
-                <pre><code class="language-js">${source_code.Dtypeof()}</code></pre>`;
+                                    const Scode = new DataType('#Typeof');
+                                    Scode.source_code('main.js',Scode.Dtypeof());
                                 </script>
                             </div>
                         </div>

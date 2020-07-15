@@ -71,11 +71,8 @@
                             <div id="WTArray" class="SCode">
                                 <script type="module">
                                     import Arrays from './Arrays.js';
-                                    const source_code = new Arrays();
-                                    let atat = document.querySelector('#WTArray');
-                                    atat.innerHTML = `<section class="source-code" data-doc="main.js">${source_code.c_header()}</section>
-                                    <pre><code class="language-js">${source_code.arithm()}</code>
-                                    </pre>`;
+                                    const Scode = new Arrays('#WTArray');
+                                    Scode.source_code('syntex',Scode.arithm());
                                 </script>
                             </div>
                         </div>
@@ -88,15 +85,26 @@
                              <div id="A_Literal" class="SCode">
                                 <script type="module">
                                     import Arrays from './Arrays.js';
-                                    const source_code = new Arrays();
-                                    let atat = document.querySelector('#A_Literal');
-                                    atat.innerHTML = `<section class="source-code" data-doc="main.js">${source_code.c_header()}</section>
-                                    <pre><code class="language-js">${source_code.Arr_Literal()}</code>
-                                    </pre>`;
+                                    const Scode = new Arrays('#A_Literal');
+                                    Scode.source_code('syntex',Scode.Arr_Literal());
                                 </script>
                              </div>
                              <hr>
-                             <h4 class="type_item">2. using Array constructor</h4>
+                             <h4 class="type_item">2. using Array constructor</h4>  
+                             <div id="Co_Array" class="SCode">
+                                <script type="module">
+                                    import Arrays from './Arrays.js';
+                                    const Scode = new Arrays('#Co_Array');
+                                    //source_code(file,method);
+                                    Scode.source_code('syntex',Scode.Co_arr());
+                                </script>
+                             </div>
+                             <p>if we use single number value in Array constructor so that is not value of array, it is length of array.</p>
+                             <h4>example-</h4>
+                             <p><span class="imp">const name = new Array(5)</span> is length of array. not value</p>
+                             <div class="note">
+                                 <p>if value are number,in that condition not use Array constructor.use only Array Literal</p>
+                             </div>
                         </div>
                     </div>
                     <!-- tab side bar -->

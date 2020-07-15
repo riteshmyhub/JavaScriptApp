@@ -2,9 +2,23 @@
 // =====================binding source code============================
 // ====================================================================
 export default class DataType {
-  constructor() {}
-  c_header() {
-    return `${header}`;
+  constructor(id) {
+    this.id = id;
+  }
+  source_code(file, code) {
+    let InCode = document.querySelector(this.id);
+    InCode.innerHTML = `
+  <section class="source-code" data-doc="${file}">
+     <span class="material-icons code_dot">fiber_manual_record</span>
+     <span class="material-icons code_dot">fiber_manual_record</span>
+     <span class="material-icons code_dot">fiber_manual_record</span>
+  </section>
+  <pre>
+    <code class="language-js">
+       ${code}
+    </code>
+  </pre>`;
+    return InCode;
   }
   Dstring() {
     return `${str}`;
@@ -31,16 +45,6 @@ export default class DataType {
     return `${typeo}`;
   }
 }
-
-const header = `<span class="material-icons code_dot">
-  fiber_manual_record 
-  </span>
-  <span class="material-icons code_dot">
-  fiber_manual_record 
-  </span>
-  <span class="material-icons code_dot">
-  fiber_manual_record 
-  </span>`;
 
 const str = `var test = "lorem"`;
 
