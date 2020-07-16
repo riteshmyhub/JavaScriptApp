@@ -1,4 +1,3 @@
-
 // --------------render for topic list -----------------
 export default class GetTopicList {
   constructor(ListObj) {

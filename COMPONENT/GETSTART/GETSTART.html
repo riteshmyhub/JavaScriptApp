@@ -21,7 +21,7 @@
             <span class="material-icons back closed">
                 keyboard_backspace
             </span>
-            <a href="../../index.html" class="side_logo">
+            <a href="../../index" class="side_logo">
                 <img src="../../src/assets/img/Jslogo.jpg" class="img-fluid" alt="" srcset="" />
             </a>
             <div class="navBar_list_bax">
@@ -112,32 +112,23 @@
                             <div id="internalJs" class="SCode">
                                 <script type="module">
                                     import Tests from './GETSTART.js';
-                                    const source_code = new Tests();
-                                    let atat = document.querySelector('#internalJs');
-                                    atat.innerHTML = `
-                <section class="source-code" data-doc="index.html">${source_code.c_header()}</section>
-                <pre><code class="language-html">${source_code.Ijs()}</code></pre>`;
+                                    const Scode = new Tests('#internalJs');
+                                    Scode.source_code('index', Scode.Ijs(),'html');
                                 </script>
                             </div>
                             <h5>2. external page javascript</h5>
                             <div id="externalJs" class="SCode">
                                 <script type="module">
                                     import Tests from './GETSTART.js';
-                                    const source_code = new Tests();
-                                    let atat = document.querySelector('#externalJs');
-                                    atat.innerHTML = `
-                <section class="source-code" data-doc="index.html">${source_code.c_header()}</section>
-                <pre><code class="language-html">${source_code.Ejs()}</code></pre>`;
+                                    const Scode = new Tests('#externalJs');
+                                    Scode.source_code('index', Scode.Ejs(),'html');
                                 </script>
                             </div>
                             <div id="mainJs" class="SCode">
                                 <script type="module">
                                     import Tests from './GETSTART.js';
-                                    const source_code = new Tests();
-                                    let atat = document.querySelector('#mainJs');
-                                    atat.innerHTML = `
-                <section class="source-code" data-doc="main.js">${source_code.c_header()}</section>
-                <pre><code class="language-html">#code here</code></pre>`;
+                                    const Scode = new Tests('#mainJs');
+                                    Scode.source_code('index', Scode.Ejs(),'html');
                                 </script>
                             </div>
                             <p>
@@ -163,11 +154,8 @@
                     <div id="helloJs" class="SCode">
                         <script type="module">
                             import Tests from './GETSTART.js';
-                            const source_code = new Tests();
-                            let atat = document.querySelector('#helloJs');
-                            atat.innerHTML = `
-        <section class="source-code" data-doc="main.js">${source_code.c_header()}</section>
-        <pre><code class="language-javascript">document.write('hello');</code></pre>`;
+                            const Scode = new Tests('#helloJs');
+                            Scode.source_code('index', Scode.Ejs(),'html');
                         </script>
                     </div>
                     <h3></h3>

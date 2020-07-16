@@ -1,25 +1,6 @@
-// ====================================================================
-// =====================binding source code============================
-// ====================================================================
-export default class Arrays {
-  constructor(id) {
-    this.id = id;
-  }
-  source_code(file, code) {
-    let InCode = document.querySelector(this.id);
-    InCode.innerHTML = `
-  <section class="source-code" data-doc="${file}">
-     <span class="material-icons code_dot">fiber_manual_record</span>
-     <span class="material-icons code_dot">fiber_manual_record</span>
-     <span class="material-icons code_dot">fiber_manual_record</span>
-  </section>
-  <pre>
-    <code class="language-js">
-       ${code}
-    </code>
-  </pre>`;
-    return InCode;
-  }
+import SourceCode from '../../source_code_render.js';
+
+export default class Arrays extends SourceCode {
   arithm() {
     return `${what_arr}`;
   }
@@ -30,8 +11,17 @@ export default class Arrays {
   Co_arr() {
     return `${co_arr_syntax}`;
   }
+  // Mode_Array
+  ModeArr() {
+    return `${Mode_Array}`;
+  }
+  Remove_A() {
+    return `${Remove_arr}`;
+  }
 }
-
+// ====================================================================
+// ============================source code============================
+// ====================================================================
 const what_arr = `
  let Framework = ["angular","react","vue"];
  document.write(Framework);// output - angularr,react,vue`;
@@ -59,3 +49,15 @@ name[3]=true;
 const name = new Array("abc","xyz",123,true);
 
 document.write(name[0])//...[1]....n`;
+
+const Mode_Array = `
+let FirstYear = ['raj',"akash",'abhishek'];
+FirstYear[0]="rajesh";// raj is Modifying in rajesh
+// -----or---------
+let FirstYear = ['raj',"akash",'abhishek'];
+let test = FirstYear;
+test[0]="rajesh";`;
+
+const Remove_arr = `
+let FirstYear = ['raj',"akash",'abhishek'];
+delete FirstYear[0];// raj is remove`;

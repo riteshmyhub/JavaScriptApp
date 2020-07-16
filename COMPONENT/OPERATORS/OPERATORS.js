@@ -1,9 +1,7 @@
+import SourceCode from '../../source_code_render.js';
 
-// ====================================================================
-// =====================binding source code============================
-// ====================================================================
-export default class Operators {
-  constructor() {}
+export default class Operators extends SourceCode {
+
   assign() {
     let assign_list = [
       { sno:1 , Operators: '=', Example: 'a = b', same_like: 'a = b' },
@@ -29,16 +27,6 @@ export default class Operators {
     return `${logicals}`;
   }
 }
-
-const header = `<span class="material-icons code_dot">
-    fiber_manual_record 
-    </span>
-    <span class="material-icons code_dot">
-    fiber_manual_record 
-    </span>
-    <span class="material-icons code_dot">
-    fiber_manual_record 
-    </span>`;
 
 const arithmetic = `
      var a = 100;

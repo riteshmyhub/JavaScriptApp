@@ -26,7 +26,7 @@
             </a>
             <div class="navBar_list_bax">
                 <nav class="nav flex-column" id="Topic_Navigation">
-                    <a disabled="disabled" class="nav-link mb-2" href="./COMPONENT/GETSTART/GETSTART.html">GET STARTED</a>
+                    <a class="nav-link mb-2" href="./../GETSTART/GETSTART.html">GET STARTED</a>
                     <a class="nav-link mb-2" href="./../VARIABLE/VARIABLE.html">Variables</a>
                     <a class="nav-link mb-2" href="./../DATA_TYPES/DATA_TYPES.html">data types</a>
                     <a class="nav-link mb-2" href="./../OPERATORS/OPERATORS.html">operators</a>
@@ -60,7 +60,7 @@
                 <!----------------------------------------------->
                 <div class="row intro">
                     <div class="col-lg-9 tab-content" style=" background-color: white;">
-                    
+
                         <!-- tab 1 -->
                         <div class="tab-pane active" id="tab1">
                             <h1 class="topic-nav-heading">What is aaray</h1>
@@ -72,39 +72,71 @@
                                 <script type="module">
                                     import Arrays from './Arrays.js';
                                     const Scode = new Arrays('#WTArray');
-                                    Scode.source_code('syntex',Scode.arithm());
+                                    Scode.source_code('syntex', Scode.arithm(),'js');
                                 </script>
                             </div>
                         </div>
                         <!-- tab 2 -->
                         <div class="tab-pane" id="tab2">
                             <h1 class="topic-nav-heading">Declaration and Initialization of Array</h1>
-                             <h3 class="type">Declaration and Initialization of Array in Two ways</h3>
-                             <h4 class="type_item">1. using Array Literal</h4>
-                             <p>Array indexing always start from <span class="imp"> 0,1,2....n</span></p>
-                             <div id="A_Literal" class="SCode">
+                            <h3 class="type">Declaration and Initialization of Array in Two ways</h3>
+                            <h4 class="type_item">1. using Array Literal</h4>
+                            <p>Array indexing always start from <span class="imp"> 0,1,2....n</span></p>
+                            <div id="A_Literal" class="SCode">
                                 <script type="module">
                                     import Arrays from './Arrays.js';
                                     const Scode = new Arrays('#A_Literal');
-                                    Scode.source_code('syntex',Scode.Arr_Literal());
+                                    Scode.source_code('syntex', Scode.Arr_Literal(),'js');
                                 </script>
-                             </div>
-                             <hr>
-                             <h4 class="type_item">2. using Array constructor</h4>  
-                             <div id="Co_Array" class="SCode">
+                            </div>
+                            <hr>
+                            <h4 class="type_item">2. using Array constructor</h4>
+                            <div id="Co_Array" class="SCode">
                                 <script type="module">
                                     import Arrays from './Arrays.js';
                                     const Scode = new Arrays('#Co_Array');
                                     //source_code(file,method);
-                                    Scode.source_code('syntex',Scode.Co_arr());
+                                    Scode.source_code('syntex', Scode.Co_arr(),'js');
                                 </script>
-                             </div>
-                             <p>if we use single number value in Array constructor so that is not value of array, it is length of array.</p>
-                             <h4>example-</h4>
-                             <p><span class="imp">const name = new Array(5)</span> is length of array. not value</p>
-                             <div class="note">
-                                 <p>if value are number,in that condition not use Array constructor.use only Array Literal</p>
-                             </div>
+                            </div>
+                            <p>if we use single number value in Array constructor so that is not value of array, it is
+                                length of array.</p>
+                            <h4>example-</h4>
+                            <p><span class="imp">const name = new Array(5)</span> is length of array. not value</p>
+                            <div class="note">
+                                <p>if value are number,in that condition not use Array constructor.use only Array
+                                    Literal</p>
+                            </div>
+                        </div>
+                        <!-- tab 3 -->
+                        <div class="tab-pane" id="tab3">
+                            <h1 class="topic-nav-heading">Modifying Array </h1>
+                            <p>In Modifying Array , override to array vlue using <span class="imp">indexing</span></p>
+                            <div id="modeA" class="SCode">
+                                <script type="module">
+                                    import Arrays from './Arrays.js';
+                                    const Scode = new Arrays('#modeA');
+                                    //source_code(file,method);
+                                    Scode.source_code('main', Scode.ModeArr(),'js');
+                                </script>
+                            </div>
+                        </div>
+                        <!-- tab 4  -->
+                        <div class="tab-pane" id="tab4">
+                            <h1 class="topic-nav-heading"> Removing Array Element</h1>
+                            <p>Use <span class="imp">Delete</span> operator for Removing Array Element</p>
+                            <p>when <span class="imp">Delete</span> to Array Element so Deleted space is <span
+                                    class="imp">undefined</span></p>
+                            <p>when <span class="imp">Deleted</span> to Array Element but not change <span
+                                    class="imp">length of array</span></p>
+                            <div id="removeA" class="SCode">
+                                <script type="module">
+                                    import Arrays from './Arrays.js';
+                                    const Scode = new Arrays('#removeA');
+                                    //source_code(file,method);
+                                    Scode.source_code('main', Scode.Remove_A(),'js');
+                                </script>
+                            </div>
                         </div>
                     </div>
                     <!-- tab side bar -->
@@ -112,14 +144,16 @@
                         <div class="list_box Get_scroll">
                             <nav class="nav flex-column" id="array_topic">
                                 <script type="module">
-                                import GetTopicList from '../../main.js';
-                                // new class Obj
-                                const topicList = new GetTopicList([
-                                { name: 'what is array' },
-                                { name: 'Declaration and Initialization of Array' },
-                                ]);
-                                // get element id
-                                topicList.listing('#array_topic');
+                                    import GetTopicList from '../../main.js';
+                                    // new class Obj
+                                    const topicList = new GetTopicList([
+                                        { name: 'what is array' },
+                                        { name: 'Declaration and Initialization of Array' },
+                                        { name: 'Modifying Array' },
+                                        { name: 'Removing Array Element' },
+                                    ]);
+                                    // get element id
+                                    topicList.listing('#array_topic');
                                 </script>
                             </nav>
                         </div>
@@ -146,6 +180,7 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
 <script>
-  
+
 </script>
+
 </html>

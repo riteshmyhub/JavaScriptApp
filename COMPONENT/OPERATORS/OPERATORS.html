@@ -26,7 +26,7 @@
             </a>
             <div class="navBar_list_bax">
                 <nav class="nav flex-column" id="Topic_Navigation">
-                    <a disabled="disabled" class="nav-link mb-2" href="./COMPONENT/GETSTART/GETSTART.html">GET STARTED</a>
+                    <a class="nav-link mb-2" href="./../GETSTART/GETSTART.html">GET STARTED</a>
                     <a class="nav-link mb-2" href="./../VARIABLE/VARIABLE.html">Variables</a>
                     <a class="nav-link mb-2" href="./../DATA_TYPES/DATA_TYPES.html">data types</a>
                     <a class="nav-link mb-2" href="">operators</a>
@@ -69,11 +69,8 @@
                             <div id="arithm" class="SCode">
                                 <script type="module">
                                     import Operators from './OPERATORS.js';
-                                    const source_code = new Operators();
-                                    let atat = document.querySelector('#arithm');
-                                    atat.innerHTML = `
-                <section class="source-code" data-doc="main.js">${source_code.c_header()}</section>
-                <pre><code class="language-js">${source_code.arithm()}</code></pre>`;
+                                    const Scode = new Operators('#arithm');
+                                    Scode.source_code('main', Scode.arithm(),'js');
                                 </script>
                             </div>
                         </div>
@@ -106,11 +103,8 @@
                                                     <div id="rela" class="SCode">
                                                         <script type="module">
                                                             import Operators from './OPERATORS.js';
-                                                            const source_code = new Operators();
-                                                            let atat = document.querySelector('#rela');
-                                                            atat.innerHTML = `
-                <section class="source-code" data-doc="main.js">${source_code.c_header()}</section>
-                <pre><code class="language-js">${source_code.rela()}</code></pre>`;
+                                                            const Scode = new Operators('#rela');
+                                                            Scode.source_code('main', Scode.rela(),'js');
                                                         </script>
                                                     </div>
                         </div>
@@ -134,14 +128,10 @@
                             <div id="logical" class="SCode">
                                 <script type="module">
                                     import Operators from './OPERATORS.js';
-                                    const source_code = new Operators();
-                                    let atat = document.querySelector('#logical');
-                                    atat.innerHTML = `
-                <section class="source-code" data-doc="main.js">${source_code.c_header()}</section>
-                <pre><code class="language-js">${source_code.logic()}</code></pre>`;
+                                    const Scode = new Operators('#logical');
+                                    Scode.source_code('main', Scode.logic(),'js');
                                 </script>
                             </div>
-
                         </div>
                         <!-- tab 4 -->
                         <div class="tab-pane" id="tab4">

@@ -26,7 +26,7 @@
             </a>
             <div class="navBar_list_bax">
                 <nav class="nav flex-column" id="Topic_Navigation">
-                    <a disabled="disabled" class="nav-link mb-2" href="./COMPONENT/GETSTART/GETSTART.html">GET STARTED</a>
+                    <a class="nav-link mb-2" href="./../GETSTART/GETSTART.html">GET STARTED</a>
                     <a class="nav-link mb-2" href="./../VARIABLE/VARIABLE.html">Variables</a>
                     <a class="nav-link mb-2" href="./../DATA_TYPES/DATA_TYPES.html">data types</a>
                     <a class="nav-link mb-2" href="./../OPERATORS/OPERATORS.html">operators</a>
@@ -42,7 +42,7 @@
                 <div class="container-fluid">
                     <a class="navbar-brand logo" id="open">
                         <span class="material-icons menu">
-                            menu 
+                            menu
                         </span>
                     </a>
                     <a class="will_only_mobile">
@@ -50,9 +50,9 @@
                             more_vert
                         </span>
                     </a>
-                  </div>
-                  <div class="main_heading">ES6</div>
-              </nav>
+                </div>
+                <div class="main_heading">ES6</div>
+            </nav>
             <!--  -->
             <div class="container-fluid" id="component" style="height: 100vh;">
                 <!----------------------------------------------->
@@ -60,7 +60,7 @@
                 <!----------------------------------------------->
                 <div class="row intro">
                     <div class="col-lg-9 tab-content" style=" background-color: white;">
-                         <!-- tab 1 -->
+                        <!-- tab 1 -->
                         <div class="tab-pane active" id="tab1">
                             <h1 class="topic-nav-heading">Class</h1>
                             <p>In java script class is special function</p>
@@ -71,11 +71,8 @@
                             <div id="Esclass" class="SCode">
                                 <script type="module">
                                     import Ecmascript from './ES6.js';
-                                    const source_code = new Ecmascript();
-                                    let atat = document.querySelector('#Esclass');
-                                    atat.innerHTML = `
-                <section class="source-code" data-doc="syntax">${source_code.c_header()}</section>
-                <pre><code class="language-js">${source_code.syntax()}</code></pre>`;
+                                    const Scode = new Ecmascript('#Esclass');
+                                    Scode.source_code('main', Scode.syntax(),'js');
                                 </script>
                             </div>
                             <hr>
@@ -83,11 +80,8 @@
                             <div id="Exclass" class="SCode">
                                 <script type="module">
                                     import Ecmascript from './ES6.js';
-                                    const source_code = new Ecmascript();
-                                    let atat = document.querySelector('#Exclass');
-                                    atat.innerHTML = `
-            <section class="source-code" data-doc="main.js">${source_code.c_header()}</section>
-            <pre><code class="language-js">${source_code.examlpe()}</code></pre>`;
+                                    const Scode = new Ecmascript('#Exclass');
+                                    Scode.source_code('main', Scode.examlpe(),'js');
                                 </script>
                             </div>
 
@@ -101,11 +95,8 @@
                             <div id="ParaCons" class="SCode">
                                 <script type="module">
                                     import Ecmascript from './ES6.js';
-                                    const source_code = new Ecmascript();
-                                    let atat = document.querySelector('#ParaCons');
-                                    atat.innerHTML = `
-              <section class="source-code" data-doc="main.js">${source_code.c_header()}</section>
-              <pre><code class="language-js">${source_code.ParaCons()}</code></pre>`;
+                                    const Scode = new Ecmascript('#ParaCons');
+                                    Scode.source_code('main', Scode.ParaCons(),'js');
                                 </script>
                             </div>
                         </div>
@@ -126,11 +117,8 @@
                             <div id="InheritSyntax" class="SCode">
                                 <script type="module">
                                     import Ecmascript from './ES6.js';
-                                    const source_code = new Ecmascript();
-                                    let atat = document.querySelector('#InheritSyntax');
-                                    atat.innerHTML = `
-                <section class="source-code" data-doc="syntax">${source_code.c_header()}</section>
-                <pre><code class="language-js">${source_code.Inherit()}</code></pre>`;
+                                    const Scode = new Ecmascript('#InheritSyntax');
+                                    Scode.source_code('main', Scode.Inherit(),'js');
                                 </script>
                             </div>
                             <hr>
@@ -138,89 +126,81 @@
                             <div id="InheritEX" class="SCode">
                                 <script type="module">
                                     import Ecmascript from './ES6.js';
-                                    const source_code = new Ecmascript();
-                                    let atat = document.querySelector('#InheritEX');
-                                    atat.innerHTML = `
-        <section class="source-code" data-doc="syntax">${source_code.c_header()}</section>
-        <pre><code class="language-js">${source_code.Inherit_Ex()}</code></pre>`;
+                                    const Scode = new Ecmascript('#InheritEX');
+                                    Scode.source_code('main', Scode.Inherit_Ex(),'js');
                                 </script>
                             </div>
                             <hr>
                             <h3 class="type">Inherit Built-in Object</h3>
-                             <h5 class="type_item">Date</h5>
-                             <h5 class="type_item">String</h5>
-                             <h5 class="type_item">Array</h5>
-                             <p>This Built-in Object is like parent class we can Inherit to this Class in Custom child class.</p>
+                            <h5 class="type_item">Date</h5>
+                            <h5 class="type_item">String</h5>
+                            <h5 class="type_item">Array</h5>
+                            <p>This Built-in Object is like parent class we can Inherit to this Class in Custom child
+                                class.</p>
                         </div>
                         <!-- tab 4 -->
                         <div class="tab-pane" id="tab4">
                             <h1 class="topic-nav-heading">Super Method</h1>
                             <p>By <span class="imp">super()</span> Method , Inherit two class of constructor</p>
-                            <p>This <span class="imp">super()</span> Method is used for initialize to parent class constructor</p>
+                            <p>This <span class="imp">super()</span> Method is used for initialize to parent class
+                                constructor</p>
                             <p>This <span class="imp">super()</span>Method always use in child class of constructor.</p>
-                            <p><span class="imp">super()</span> method is always place on top in constructor than put other properties</p>
-                            <p>In <span class="imp">super()</span>Method , pass that's Parameter that pass in parent class constructor Parameter</p>
+                            <p><span class="imp">super()</span> method is always place on top in constructor than put
+                                other properties</p>
+                            <p>In <span class="imp">super()</span>Method , pass that's Parameter that pass in parent
+                                class constructor Parameter</p>
                             <div id="SuperPro" class="SCode">
                                 <script type="module">
                                     import Ecmascript from './ES6.js';
-                                    const source_code = new Ecmascript();
-                                    let atat = document.querySelector('#SuperPro');
-                                    atat.innerHTML = `
-              <section class="source-code" data-doc="main.js">${source_code.c_header()}</section>
-              <pre><code class="language-js">${source_code.SuperPro()}</code></pre>`;
+                                    const Scode = new Ecmascript('#SuperPro');
+                                    Scode.source_code('main', Scode.SuperPro(),'js');
                                 </script>
                             </div>
                         </div>
-                         <!-- tab 5 -->
-                         <div class="tab-pane" id="tab5">
+                        <!-- tab 5 -->
+                        <div class="tab-pane" id="tab5">
                             <h1 class="topic-nav-heading">Method Overriding</h1>
                             <img src="../../src/assets/img/Method_Overriding.png" class="img-fluid" alt="" srcset="">
-                            <p>In Overriding method , call parent class of method in child class than Overriding that method</p>
+                            <p>In Overriding method , call parent class of method in child class than Overriding that
+                                method</p>
                             <div id="Method_Over" class="SCode">
                                 <script type="module">
                                     import Ecmascript from './ES6.js';
-                                    const source_code = new Ecmascript();
-                                    let atat = document.querySelector('#Method_Over');
-                                    atat.innerHTML = `
-              <section class="source-code" data-doc="main.js">${source_code.c_header()}</section>
-              <pre><code class="language-js">${source_code.Method_Over()}</code></pre>`;
+                                    const Scode = new Ecmascript('#Method_Over');
+                                    Scode.source_code('main', Scode.Method_Over(),'js');
                                 </script>
                             </div>
-                         </div>
-                         <!-- tab 6 -->
-                         <div class="tab-pane" id="tab6">
-                            <h1 class="topic-nav-heading">Static Method</h1>
-                          <p>In Static Method Use in class.</p>
-                          <p>No need to create Object of class for <span class="imp">Static Method</span></p>
-
-                          <div id="static_m" class="SCode">
-                            <script type="module">
-                                import Ecmascript from './ES6.js';
-                                const source_code = new Ecmascript();
-                                let atat = document.querySelector('#static_m');
-                                atat.innerHTML = `
-          <section class="source-code" data-doc="main.js">${source_code.c_header()}</section>
-          <pre><code class="language-js">${source_code.
-                          static_m()}</code></pre>`;
-                            </script>
                         </div>
-                        
-                         </div>
+                        <!-- tab 6 -->
+                        <div class="tab-pane" id="tab6">
+                            <h1 class="topic-nav-heading">Static Method</h1>
+                            <p>In Static Method Use in class.</p>
+                            <p>No need to create Object of class for <span class="imp">Static Method</span></p>
+
+                            <div id="static_m" class="SCode">
+                                <script type="module">
+                                    import Ecmascript from './ES6.js';
+                                    const Scode = new Ecmascript('#static_m');
+                                    Scode.source_code('main', Scode.static_m(),'js');
+                                </script>
+                            </div>
+
+                        </div>
                     </div>
                     <!-- tab side bar -->
                     <div class="col-lg-3 Get_scroll CenterY" style="background: #dfdbdb;">
                         <div class="list_box Get_scroll">
                             <nav class="nav flex-column" id="Es_topic">
                                 <script type="module">
-                                import GetTopicList from '../../main.js';
+                                    import GetTopicList from '../../main.js';
                                     // new class Obj
-                                   const topicList = new GetTopicList([
-                                   { name: 'class' },
-                                   { name: 'Parameterized Constructor' },
-                                   { name: 'class Inheritance' },
-                                   { name: 'Super Method' },
-                                   { name: 'Method Overriding' },
-                                   { name: 'Static Method' },
+                                    const topicList = new GetTopicList([
+                                        { name: 'class' },
+                                        { name: 'Parameterized Constructor' },
+                                        { name: 'class Inheritance' },
+                                        { name: 'Super Method' },
+                                        { name: 'Method Overriding' },
+                                        { name: 'Static Method' },
                                     ]);
                                     // get element id
                                     topicList.listing('#Es_topic');

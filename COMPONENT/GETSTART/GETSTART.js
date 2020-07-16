@@ -1,16 +1,10 @@
-// ====================================================================
-// =====================binding source code============================
-// ====================================================================
-export default class Tests {
-  constructor() {}
-  c_header() {
-    return `${header}`;
-  }
+import SourceCode from '../../source_code_render.js';
+export default class Tests extends SourceCode {
   Ijs() {
     return `${internaljs}`;
   }
-  Ejs(){
-    return `${externaljs}`
+  Ejs() {
+    return `${externaljs}`;
   }
   js() {
     return `${js}`;
@@ -36,7 +30,7 @@ const internaljs = `
 &lt;/body&gt;
 &lt;/html&gt;`;
 
-const externaljs= `
+const externaljs = `
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -48,13 +42,3 @@ const externaljs= `
     &lt;script src=&quot;main.js&quot;&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;`;
-
-const header = `<span class="material-icons code_dot">
-fiber_manual_record 
-</span>
-<span class="material-icons code_dot">
-fiber_manual_record 
-</span>
-<span class="material-icons code_dot">
-fiber_manual_record 
-</span>`;

@@ -1,11 +1,6 @@
-// ====================================================================
-// =====================binding source code============================
-// ====================================================================
-export default class Statements {
-  constructor() {}
-  c_header() {
-    return `${header}`;
-  }
+import SourceCode from '../../source_code_render.js';
+
+export default class Statements extends SourceCode {
   syntax() {
     return `${syntax}`;
   }
@@ -13,16 +8,6 @@ export default class Statements {
     return `${classEx}`;
   }
 }
-
-const header = `<span class="material-icons code_dot">
-    fiber_manual_record 
-    </span>
-    <span class="material-icons code_dot">
-    fiber_manual_record 
-    </span>
-    <span class="material-icons code_dot">
-    fiber_manual_record 
-    </span>`;
 
 const syntax = `
             if(100 == 100){

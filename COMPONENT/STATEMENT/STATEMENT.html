@@ -26,7 +26,7 @@
             </a>
             <div class="navBar_list_bax">
                 <nav class="nav flex-column" id="Topic_Navigation">
-                    <a disabled="disabled" class="nav-link mb-2" href="./COMPONENT/GETSTART/GETSTART.html">GET STARTED</a>
+                    <a class="nav-link mb-2" href="./../GETSTART/GETSTART.html">GET STARTED</a>
                     <a class="nav-link mb-2" href="./../VARIABLE/VARIABLE.html">Variables</a>
                     <a class="nav-link mb-2" href="./../DATA_TYPES/DATA_TYPES.html">data types</a>
                     <a class="nav-link mb-2" href="./../OPERATORS/OPERATORS.html">operators</a>
@@ -42,7 +42,7 @@
                 <div class="container-fluid">
                     <a class="navbar-brand logo" id="open">
                         <span class="material-icons menu">
-                            menu 
+                            menu
                         </span>
                     </a>
                     <a class="will_only_mobile">
@@ -50,8 +50,8 @@
                             more_vert
                         </span>
                     </a>
-                  </div>
-                  <div class="main_heading">Statements</div>
+                </div>
+                <div class="main_heading">Statements</div>
             </nav>
             <!--  -->
             <div class="container-fluid" id="component" style="height: 100vh;">
@@ -60,44 +60,42 @@
                 <!----------------------------------------------->
                 <div class="row intro">
                     <div class="col-lg-9 tab-content" style=" background-color: white;">
-                        
+
                         <!-- tab 1 -->
                         <div class="tab-pane active" id="tab1">
                             <h1 class="topic-nav-heading">If Statements</h1>
-                            <p>In <span class="imp"> If Statements </span> has two condition - <span class="imp">true & false</span>.</p>
+                            <p>In <span class="imp"> If Statements </span> has two condition - <span class="imp">true &
+                                    false</span>.</p>
 
                             <p>In <span class="imp"> If Statements </span> condition is true so execute code</p>
 
                             <p>In <span class="imp"> If Statements </span> condition is false so not execute code</p>
-                           <h3>Example</h3>
-                          <div id="If" class="SCode">
-                            <script type="module">
-                                import Statements from './STATEMENT.js';
-                                const source_code = new Statements();
-                                let atat = document.querySelector('#If');
-                                atat.innerHTML = `
-            <section class="source-code" data-doc="main.js">${source_code.c_header()}</section>
-            <pre><code class="language-js">${source_code.syntax()}</code></pre>`;
-                            </script>
-                        </div>
+                            <h3>Example</h3>
+                            <div id="If" class="SCode">
+                                <script type="module">
+                                    import Statements from './STATEMENT.js';
+                                    const Scode = new Statements('#If');
+                                    Scode.source_code('main', Scode.syntax(),'js');
+                                </script>
+                            </div>
 
                         </div>
-                        
+
                     </div>
                     <!-- tab side bar -->
                     <div class="col-lg-3 Get_scroll CenterY" style="background: #dfdbdb;">
                         <div class="list_box Get_scroll">
                             <nav class="nav flex-column" id="state_topic">
                                 <script type="module">
-                                import GetTopicList from '../../main.js';
+                                    import GetTopicList from '../../main.js';
                                     // new class Obj
-                                const topicList = new GetTopicList([
-                                  { name: 'if Statements' },
-                                  { name: 'Else Statement' }, 
-                                ]);
+                                    const topicList = new GetTopicList([
+                                        { name: 'if Statements' },
+                                        { name: 'Else Statement' },
+                                    ]);
                                     // get element id
-                                topicList.listing('#state_topic');
-                                </script>                      
+                                    topicList.listing('#state_topic');
+                                </script>
                             </nav>
                         </div>
                     </div>

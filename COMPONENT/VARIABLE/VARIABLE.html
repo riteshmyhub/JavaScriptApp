@@ -26,7 +26,7 @@
             </a>
             <div class="navBar_list_bax">
                 <nav class="nav flex-column" id="Topic_Navigation">
-                    <a disabled="disabled" class="nav-link mb-2" href="./COMPONENT/GETSTART/GETSTART.html">GET STARTED</a>
+                    <a class="nav-link mb-2" href="./../GETSTART/GETSTART.html">GET STARTED</a>
                     <a class="nav-link mb-2" href="">Variables</a>
                     <a class="nav-link mb-2" href="./../DATA_TYPES/DATA_TYPES.html">data types</a>
                     <a class="nav-link mb-2" href="./../OPERATORS/OPERATORS.html">operators</a>
@@ -42,7 +42,7 @@
                 <div class="container-fluid">
                     <a class="navbar-brand logo" id="open">
                         <span class="material-icons menu">
-                            menu 
+                            menu
                         </span>
                     </a>
                     <a class="will_only_mobile">
@@ -50,30 +50,28 @@
                             more_vert
                         </span>
                     </a>
-                  </div>
-                  <div class="main_heading">Variables</div>
+                </div>
+                <div class="main_heading">Variables</div>
             </nav>
             <!--  -->
             <div class="container-fluid" id="component" style="height: 100vh;">
-                       <!----------------------------------------------->
-                       <!-----------------end page content--------------->
-                       <!----------------------------------------------->
+                <!----------------------------------------------->
+                <!-----------------end page content--------------->
+                <!----------------------------------------------->
                 <div class="row intro">
                     <div class="col-lg-9 tab-content" style=" background-color: white;">
-                         <!-- tab 1 -->
-                         <div class="tab-pane active" id="tab1">
-                            <h1 class="topic-nav-heading">VARIABLE</h1> 
-                            <p>varable is store to value with data type , value mey be may data type like - string ,number,Boolean.</p> 
+                        <!-- tab 1 -->
+                        <div class="tab-pane active" id="tab1">
+                            <h1 class="topic-nav-heading">VARIABLE</h1>
+                            <p>varable is store to value with data type , value mey be may data type like - string
+                                ,number,Boolean.</p>
                             <p>keyword (var) of globle scope</p>
-                            <p>keyword (var) is window object property</p>  
+                            <p>keyword (var) is window object property</p>
                             <div id="varJs" class="SCode">
                                 <script type="module">
                                     import Variables from './VARIABLE.js';
-                                    const source_code = new Variables();
-                                    let atat = document.querySelector('#varJs');
-                                    atat.innerHTML = `
-                <section class="source-code" data-doc="main.js">${source_code.c_header()}</section>
-                <pre><code class="language-js">${source_code.js()}</code></pre>`;
+                                    const Scode = new Variables('#varJs');
+                                    Scode.source_code('main', Scode.js(),'js');
                                 </script>
                             </div>
                             <h3 class="types">varable name rules</h3>
@@ -82,67 +80,62 @@
                             <h5 class="type_item text-success">name_data12</h5>
                             <h5 class="type_item text-danger">12namedata</h5>
                             <h5 class="type_item text-danger">name data</h5>
-                            
+
                         </div>
                         <!-- tab 2 -->
                         <div class="tab-pane" id="tab2">
-                            <h1 class="topic-nav-heading">LET</h1> 
-                            <p>keyword (let) of limited scope and in block stetment but out of block (let) key word not work.</p>
+                            <h1 class="topic-nav-heading">LET</h1>
+                            <p>keyword (let) of limited scope and in block stetment but out of block (let) key word not
+                                work.</p>
                             <p>keyword (let) is not window object property</p>
-                            <h3 >Block Stetment</h3> 
+                            <h3>Block Stetment</h3>
                             <p>In block of stetment any variable decide for scope</p>
                             <div id="BsJs" class="SCode">
                                 <script type="module">
                                     import Variables from './VARIABLE.js';
-                                    const source_code = new Variables();
-                                    let atat = document.querySelector('#BsJs');
-                                    atat.innerHTML = `
-                <section class="source-code" data-doc="main.js">${source_code.c_header()}</section>
-                <pre><code class="language-js">${source_code.bockStetment()}</code></pre>`;
+                                    const Scode = new Variables('#BsJs');
+                                    Scode.source_code('main', Scode.bockStetment(),'js');
                                 </script>
                             </div>
                         </div>
-                 <!-- tab 3 -->
-                 <div class="tab-pane" id="tab3">
-                    <h1 class="topic-nav-heading">CONST</h1>
-                    <p>Keyword(const) may be local or globle</p>
-                    <p>When initialise in const keyword so must be declare</p>
-                    <p>If one const keyword declare value then again can not be change that value.</p>
-                    <div id="constJs" class="SCode">
-                        <script type="module">
-                            import Variables from './VARIABLE.js';
-                            const source_code = new Variables();
-                            let atat = document.querySelector('#constJs');
-                            atat.innerHTML = `
-        <section class="source-code" data-doc="main.js">${source_code.c_header()}</section>
-        <pre><code class="language-js">${source_code.const()}</code></pre>`;
-                        </script>
-                    </div>
-                </div>
+                        <!-- tab 3 -->
+                        <div class="tab-pane" id="tab3">
+                            <h1 class="topic-nav-heading">CONST</h1>
+                            <p>Keyword(const) may be local or globle</p>
+                            <p>When initialise in const keyword so must be declare</p>
+                            <p>If one const keyword declare value then again can not be change that value.</p>
+                            <div id="constJs" class="SCode">
+                                <script type="module">
+                                    import Variables from './VARIABLE.js';
+                                    const Scode = new Variables('#constJs');
+                                    Scode.source_code('main', Scode.const(),'js');
+                                </script>
+                            </div>
+                        </div>
                     </div>
                     <!-- tab side bar -->
                     <div class="col-lg-3 Get_scroll CenterY" style="background: #dfdbdb;">
                         <div class="list_box Get_scroll">
                             <nav class="nav flex-column" id="var_topic">
                                 <script type="module">
-                                import GetTopicList from '../../main.js';
+                                    import GetTopicList from '../../main.js';
                                     // new class Obj
-                                const topicList = new GetTopicList([
-                                    { name: 'variable' },
-                                    { name: 'let' },
-                                    { name: 'const' },
-                                ]);
+                                    const topicList = new GetTopicList([
+                                        { name: 'variable' },
+                                        { name: 'let' },
+                                        { name: 'const' },
+                                    ]);
                                     // get element id
-                                topicList.listing('#var_topic');
+                                    topicList.listing('#var_topic');
                                 </script>
                             </nav>
                         </div>
                     </div>
                     <!-- tab side bar -->
                 </div>
-                        <!----------------------------------------------->
-                       <!-----------------end page content--------------->
-                       <!----------------------------------------------->
+                <!----------------------------------------------->
+                <!-----------------end page content--------------->
+                <!----------------------------------------------->
             </div>
         </div>
         <!--  -->

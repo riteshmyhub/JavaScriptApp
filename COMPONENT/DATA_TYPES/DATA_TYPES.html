@@ -26,7 +26,7 @@
             </a>
             <div class="navBar_list_bax">
                 <nav class="nav flex-column" id="Topic_Navigation">
-                    <a disabled="disabled" class="nav-link mb-2" href="./../GETSTART/GETSTART.html">GET STARTED</a>
+                    <a class="nav-link mb-2" href="./../GETSTART/GETSTART.html">GET STARTED</a>
                     <a class="nav-link mb-2" href="./../VARIABLE/VARIABLE.html">Variables</a>
                     <a class="nav-link mb-2" href="">data types</a>
                     <a class="nav-link mb-2" href="./../OPERATORS/OPERATORS.html">operators</a>
@@ -67,7 +67,7 @@
                                 <script type="module">
                                     import DataType from './DATA_TYPES.js';
                                     const Scode = new DataType('#str');
-                                    Scode.source_code('main.js',Scode.Dstring());
+                                    Scode.source_code('main', Scode.Dstring(),'js');
                                 </script>
                             </div>
                             <p>In String data , text type pass any text types value in " "</p>
@@ -79,7 +79,7 @@
                                 <script type="module">
                                     import DataType from './DATA_TYPES.js';
                                     const Scode = new DataType('#num');
-                                    Scode.source_code('main.js',Scode.Dnumber());
+                                    Scode.source_code('main', Scode.Dnumber(),'js');
                                 </script>
                             </div>
                             <p>In number data type, pass any number types value. <span class="imp">like - 112 , 3.31 ,
@@ -91,7 +91,7 @@
                             <div id="bool" class="SCode">
                                 <script type="module">
                                     import DataType from './DATA_TYPES.js';
-                                    const Scode = new DataType('#bool');Scode.source_code('main.js',Scode.DBoolean());
+                                    const Scode = new DataType('#bool'); Scode.source_code('main', Scode.DBoolean(),'js');
                                 </script>
                             </div>
                             <p>In Boolean data type , pass only <span class="imp">(true or false)</span> value.</p>
@@ -103,7 +103,7 @@
                                 <script type="module">
                                     import DataType from './DATA_TYPES.js';
                                     const Scode = new DataType('#Arr');
-                                    Scode.source_code('main.js',Scode.DArray());
+                                    Scode.source_code('main', Scode.DArray(),'js');
                                 </script>
                             </div>
                             <p>In java script <span class="imp">array is always show object when use typeof
@@ -116,7 +116,7 @@
                                 <script type="module">
                                     import DataType from './DATA_TYPES.js';
                                     const Scode = new DataType('#Obj');
-                                    Scode.source_code('main.js',Scode.DObj());
+                                    Scode.source_code('main', Scode.DObj(),'js');
                                 </script>
                             </div>
                         </div>
@@ -127,7 +127,7 @@
                                 <script type="module">
                                     import DataType from './DATA_TYPES.js';
                                     const Scode = new DataType('#null');
-                                    Scode.source_code('main.js',Scode.DNull());
+                                    Scode.source_code('main', Scode.DNull(),'js');
                                 </script>
                             </div>
                             <p>In null data type , pass only <span class="imp"> (null)</span> value.</p>
@@ -140,7 +140,7 @@
                                 <script type="module">
                                     import DataType from './DATA_TYPES.js';
                                     const Scode = new DataType('#Unde');
-                                    Scode.source_code('main.js',Scode.DUndefined());
+                                    Scode.source_code('main', Scode.DUndefined(),'js');
                                 </script>
                             </div>
                             <p>In Undefined data type , pass only <span class="imp"> (Undefined)</span> value.</p>
@@ -154,7 +154,7 @@
                                 <script type="module">
                                     import DataType from './DATA_TYPES.js';
                                     const Scode = new DataType('#Typeof');
-                                    Scode.source_code('main.js',Scode.Dtypeof());
+                                    Scode.source_code('main', Scode.Dtypeof(),'js');
                                 </script>
                             </div>
                         </div>
@@ -164,20 +164,20 @@
                         <div class="list_box Get_scroll">
                             <nav class="nav flex-column" id="dataType_topic">
                                 <script type="module">
-                                import GetTopicList from '../../main.js';
+                                    import GetTopicList from '../../main.js';
                                     // new class Obj
-                                const topicList = new GetTopicList([
-                                  { name: 'string' },
-                                  { name: 'Number' },
-                                  { name: 'Boolean' },
-                                  { name: 'Array' },
-                                  { name: 'Object' },
-                                  { name: 'Null' },
-                                  { name: 'Undefined'},
-                                  { name: 'typeof' },
+                                    const topicList = new GetTopicList([
+                                        { name: 'string' },
+                                        { name: 'Number' },
+                                        { name: 'Boolean' },
+                                        { name: 'Array' },
+                                        { name: 'Object' },
+                                        { name: 'Null' },
+                                        { name: 'Undefined' },
+                                        { name: 'typeof' },
                                     ]);
                                     // get element id
-                                   topicList.listing('#dataType_topic');
+                                    topicList.listing('#dataType_topic');
                                 </script>
                             </nav>
                         </div>

@@ -1,11 +1,7 @@
-// ====================================================================
-// =====================binding source code============================
-// ====================================================================
-export default class Variables {
-  constructor() {}
-  c_header() {
-    return `${header}`;
-  }
+import SourceCode from '../../source_code_render.js';
+
+export default class Variables extends SourceCode {
+ 
   bockStetment() {
     return `${BS}`;
   }
@@ -45,13 +41,3 @@ y="lorem";//wrong way
 
 const x = "hello";//this const only reserved for x
 x = "data"; //overwrite not allow`;
-
-const header = `<span class="material-icons code_dot">
-  fiber_manual_record 
-  </span>
-  <span class="material-icons code_dot">
-  fiber_manual_record 
-  </span>
-  <span class="material-icons code_dot">
-  fiber_manual_record 
-  </span>`;

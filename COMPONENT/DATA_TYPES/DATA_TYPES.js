@@ -1,25 +1,7 @@
-// ====================================================================
-// =====================binding source code============================
-// ====================================================================
-export default class DataType {
-  constructor(id) {
-    this.id = id;
-  }
-  source_code(file, code) {
-    let InCode = document.querySelector(this.id);
-    InCode.innerHTML = `
-  <section class="source-code" data-doc="${file}">
-     <span class="material-icons code_dot">fiber_manual_record</span>
-     <span class="material-icons code_dot">fiber_manual_record</span>
-     <span class="material-icons code_dot">fiber_manual_record</span>
-  </section>
-  <pre>
-    <code class="language-js">
-       ${code}
-    </code>
-  </pre>`;
-    return InCode;
-  }
+import SourceCode from '../../source_code_render.js';
+
+export default class DataType extends SourceCode{
+ 
   Dstring() {
     return `${str}`;
   }

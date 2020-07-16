@@ -1,12 +1,6 @@
+import SourceCode from '../../source_code_render.js';
 
-// ====================================================================
-// =====================binding source code============================
-// ====================================================================
-export default class Ecmascript {
-  constructor() {}
-  c_header() {
-    return `${header}`;
-  }
+export default class Ecmascript extends SourceCode {
   syntax() {
     return `${syntax}`;
   }
@@ -37,16 +31,6 @@ export default class Ecmascript {
    return `${staticMethood}`
   }
 }
-
-const header = `<span class="material-icons code_dot">
-    fiber_manual_record 
-    </span>
-    <span class="material-icons code_dot">
-    fiber_manual_record 
-    </span>
-    <span class="material-icons code_dot">
-    fiber_manual_record 
-    </span>`;
 
 const syntax = `
   class Name_Of_class (){
