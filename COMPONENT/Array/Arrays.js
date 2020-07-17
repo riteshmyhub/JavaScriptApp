@@ -18,6 +18,14 @@ export default class Arrays extends SourceCode {
   Remove_A() {
     return `${Remove_arr}`;
   }
+  // length of array
+  ALength() {
+    return `${arrayL}`;
+  }
+  // for loop
+  AFor() {
+    return `${ArrFor}`;
+  }
 }
 // ====================================================================
 // ============================source code============================
@@ -61,3 +69,15 @@ test[0]="rajesh";`;
 const Remove_arr = `
 let FirstYear = ['raj',"akash",'abhishek'];
 delete FirstYear[0];// raj is remove`;
+
+const arrayL = `
+let day = ["sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+document.write(day.length);//output in 7`;
+
+const ArrFor = `
+let day = ["sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+for(let i=0; i&lt;day.length;i++){
+    document.write(day[i]+'&ltbr&gt');
+    //output sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday
+}`;

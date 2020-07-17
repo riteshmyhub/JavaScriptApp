@@ -138,6 +138,34 @@
                                 </script>
                             </div>
                         </div>
+                        <!-- tab 5 -->
+                        <div class="tab-pane" id="tab5">
+                            <h1 class="topic-nav-heading"> Array Length Property</h1>
+                            <p>Array Length Property is always start from <span class="imp">1....n</span></p>
+                            <p>Array Length means that , <span class="imp">how many element in array?</span></p>
+                            <p>syntax - <span class="imp">varName.length</span></p>
+                            <h2>Example-</h2>
+                            <div id="length" class="SCode">
+                                <script type="module">
+                                    import Arrays from './Arrays.js';
+                                    const Scode = new Arrays('#length');
+                                    //source_code(file,method);
+                                    Scode.source_code('main', Scode.ALength(),'js');
+                                </script> 
+                            </div>
+                        </div>
+                       <!-- tab 6 -->
+                       <div class="tab-pane" id="tab6">
+                        <h1 class="topic-nav-heading">Iteration of Array using for Loop</h1>
+                        <div id="ArrFor" class="SCode">
+                            <script type="module">
+                             import Arrays from './Arrays.js';
+                             const Scode = new Arrays('#ArrFor');
+                             Scode.source_code('main', Scode.AFor(),'js');
+                            </script>
+                        </div>
+                        <p>this for loop in print all array value but In<span class="imp">( let i=0; i&lt;day.length;i++ )</span> always <span class="imp">i = 0</span></p>
+                       </div>
                     </div>
                     <!-- tab side bar -->
                     <div class="col-lg-3 Get_scroll CenterY" style="background: #dfdbdb;">
@@ -151,6 +179,8 @@
                                         { name: 'Declaration and Initialization of Array' },
                                         { name: 'Modifying Array' },
                                         { name: 'Removing Array Element' },
+                                        { name: 'Array Length Property' },
+                                        { name: 'Iteration of Array using for Loop' },
                                     ]);
                                     // get element id
                                     topicList.listing('#array_topic');
