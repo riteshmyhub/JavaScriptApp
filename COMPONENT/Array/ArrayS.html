@@ -166,6 +166,45 @@
                         </div>
                         <p>this for loop in print all array value but In<span class="imp">( let i=0; i&lt;day.length;i++ )</span> always <span class="imp">i = 0</span></p>
                        </div>
+                       <!-- tab 7 -->
+                       <div class="tab-pane" id="tab7">
+                        <h1 class="topic-nav-heading">forEach Loop</h1>
+                        <p>forEach Loop also work as For loop but <span class="imp">forEach Loop</span> syntax is eassy.compare then for loop</p>
+                        <p>In ForEach Loop use anonymous <span class="imp">function(){ }</span></p>
+                          <div id="ForEach" class="SCode">
+                              <script type="module">
+                                 import Arrays from './Arrays.js';
+                                 const Scode = new Arrays('#ForEach');
+                                 Scode.source_code('main', Scode.FELoop(),'js');
+                              </script>
+                          </div>
+                          <p>where <span class="imp">V is value</span> and <span class="imp"> I is index </span></p>
+                       </div>
+                        <!-- tab 8 -->
+                        <div class="tab-pane" id="tab8">
+                            <h1 class="topic-nav-heading">for of Loop</h1>
+                            <p>This <span class="imp">for of Loop</span> is ES 6 syntax. it is very eassy compare then other loop.</p>
+                            <p>for of Loop is not for index , only for objects Iteration</p>
+                            <div id="ForOf" class="SCode">
+                                <script type="module">
+                                 import Arrays from './Arrays.js';
+                                 const Scode = new Arrays('#ForOf');
+                                 Scode.source_code('main', Scode.forOfL(),'js');
+                                </script>
+                            </div>
+                        </div>
+                        <!-- tab 9 -->
+                        <div class="tab-pane" id="tab9">
+                           <h1 class="topic-nav-heading">input from user in Arra</h1>
+                           <div id="inputFromU" class="SCode">
+                            <script type="module">
+                             import Arrays from './Arrays.js';
+                             const Scode = new Arrays('#inputFromU');
+                             Scode.source_code('main', Scode.InFoUser(),'js');
+                            </script>
+                        </div>
+                        </div>
+                        
                     </div>
                     <!-- tab side bar -->
                     <div class="col-lg-3 Get_scroll CenterY" style="background: #dfdbdb;">
@@ -181,6 +220,9 @@
                                         { name: 'Removing Array Element' },
                                         { name: 'Array Length Property' },
                                         { name: 'Iteration of Array using for Loop' },
+                                        { name: 'forEach Loop' },
+                                        { name: 'for of Loop' },
+                                        { name: 'input from user in Array' },
                                     ]);
                                     // get element id
                                     topicList.listing('#array_topic');

@@ -26,6 +26,16 @@ export default class Arrays extends SourceCode {
   AFor() {
     return `${ArrFor}`;
   }
+  // for Each loop
+  FELoop() {
+    return `${forEachLoop}`;
+  }
+  forOfL() {
+    return `${forOfLoop}`;
+  }
+  InFoUser() {
+    return `${input_from_arr}`;
+  }
 }
 // ====================================================================
 // ============================source code============================
@@ -80,4 +90,28 @@ let day = ["sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday
 for(let i=0; i&lt;day.length;i++){
     document.write(day[i]+'&ltbr&gt');
     //output sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday
+}`;
+
+const forEachLoop = `
+let name = ['one','two','three'];
+name.forEach(function (V, I){
+document.write(V+I);//output- one,two,three
+}); `;
+
+const forOfLoop = `
+const myArr = ['a','b','c','d','e'];
+for (const iterator of myArr) {
+  console.log(iterator);
+}`;
+
+const input_from_arr = `
+let arrays = [];
+let forUserRes = prompt('how much product item number');
+
+for (let i = 0; i < forUserRes; i++) {
+  arrays[i] = prompt('Enter product item');
+}
+
+for (let i = 0; i < forUserRes; i++) {
+  document.write(arrays[i]);
 }`;

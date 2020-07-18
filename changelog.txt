@@ -19,3 +19,11 @@ add Es6 page {
     add super() methood
     add Method Overriding
 }
+  let arrays = [];
+  let forUserRes = prompt('how much your girl Friend');
+  for (let i = 0; i < forUserRes; i++) {
+    arrays[i] = prompt('enter your girl Friend name');
+  }
+  for (let i = 0; i < forUserRes; i++) {
+    document.write(`<h1>this is your girl Friend : ${arrays[i]}</h1><br>`);
+  }
