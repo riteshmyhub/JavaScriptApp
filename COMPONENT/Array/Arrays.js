@@ -36,6 +36,10 @@ export default class Arrays extends SourceCode {
   InFoUser() {
     return `${input_from_arr}`;
   }
+  // mulit D array
+  MDA(){
+    return `${MultiArr}`
+  }
 }
 // ====================================================================
 // ============================source code============================
@@ -115,3 +119,20 @@ for (let i = 0; i < forUserRes; i++) {
 for (let i = 0; i < forUserRes; i++) {
   document.write(arrays[i]);
 }`;
+
+const MultiArr = `
+const frontend = [
+  ['framwork', 'angular', 'version 10.0'],
+  ['library', 'react', 'version 17.0'],
+  ['framwork', 'vue', 'version 2.3'],
+];// this MultiDimensional Array
+
+  // parent loop
+  for (let i = 0; i < 3; i++) {
+    // parent loop
+    for (let j = 0; j < 3; j++) {
+      document.write(fronend[i] [j]+ " ");
+    }
+    document.write('<br>');
+    //
+  }`;

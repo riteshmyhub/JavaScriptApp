@@ -204,7 +204,20 @@
                             </script>
                         </div>
                         </div>
-                        
+                        <!-- tab 10 -->
+                        <div class="tab-pane" id="tab10">
+                            <h1 class="topic-nav-heading">MultiDimensional Array</h1>  
+                            <p><span class="imp">Array of Array</span> is called to MultiDimensional Array</p>
+                            <p>MultiDimensional Array mey be <span class="imp">2d,3d,4d etc.</span></p>
+                            <div id="MDA" class="SCode">
+                                <script type="module">
+                                    import Arrays from './Arrays.js';
+                                    const Scode = new Arrays('#MDA');
+                                    Scode.source_code('main', Scode.MDA(),'js');
+                                 </script>
+                            </div>
+                        </div>
+                       
                     </div>
                     <!-- tab side bar -->
                     <div class="col-lg-3 Get_scroll CenterY" style="background: #dfdbdb;">
@@ -223,6 +236,7 @@
                                         { name: 'forEach Loop' },
                                         { name: 'for of Loop' },
                                         { name: 'input from user in Array' },
+                                        { name: 'Multi-Dimensional Array' },
                                     ]);
                                     // get element id
                                     topicList.listing('#array_topic');
