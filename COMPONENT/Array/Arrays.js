@@ -37,8 +37,11 @@ export default class Arrays extends SourceCode {
     return `${input_from_arr}`;
   }
   // mulit D array
-  MDA(){
-    return `${MultiArr}`
+  MDA() {
+    return `${MultiArr}`;
+  }
+  empty2DArray() {
+    return `${empty2DArr}`;
   }
 }
 // ====================================================================
@@ -133,6 +136,19 @@ const frontend = [
     for (let j = 0; j < 3; j++) {
       document.write(fronend[i] [j]+ " ");
     }
-    document.write('<br>');
-    //
+    document.write('&lt;br&gt');
   }`;
+const empty2DArr = `
+let blankArr = [];
+let Row = 3;
+let col = 4;
+for (let i = 0; i < Row; i++) {
+  blankArr[i] = [];
+}//this is increases array in array like - [[],[]...]
+
+for (let i = 0; i < Row; i++) {
+  for (let j = 0; j < col; j++) {
+    document.write([i] + [j] + '|');
+  }
+  document.write('&lt;br&gt');
+}`;

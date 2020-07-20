@@ -217,7 +217,17 @@
                                  </script>
                             </div>
                         </div>
-                       
+                       <!-- tab 11 -->
+                       <div class="tab-pane" id="tab11">
+                        <h1 class="topic-nav-heading">Create Empty 2D Array</h1>  
+                        <div id="Em2dArr" class="SCode">
+                            <script type="module">
+                                import Arrays from './Arrays.js';
+                                const Scode = new Arrays('#Em2dArr');
+                                Scode.source_code('main', Scode.empty2DArray(),'js');
+                             </script>
+                        </div>
+                    </div>
                     </div>
                     <!-- tab side bar -->
                     <div class="col-lg-3 Get_scroll CenterY" style="background: #dfdbdb;">
@@ -237,6 +247,7 @@
                                         { name: 'for of Loop' },
                                         { name: 'input from user in Array' },
                                         { name: 'Multi-Dimensional Array' },
+                                        { name: 'Create Empty 2D Array' },
                                     ]);
                                     // get element id
                                     topicList.listing('#array_topic');
