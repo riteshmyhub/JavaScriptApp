@@ -40,8 +40,20 @@ export default class Arrays extends SourceCode {
   MDA() {
     return `${MultiArr}`;
   }
+  // empty 2D Array
   empty2DArray() {
     return `${empty2DArr}`;
+  }
+  // empty 2D Array Inputs
+  empty2DArrInputs() {
+    return `${empty2DArrInput}`;
+  }
+  // concat method
+  concM() {
+    return `${ConC}`;
+  }
+  concArray(){
+    return`${concArr}`;
   }
 }
 // ====================================================================
@@ -152,3 +164,30 @@ for (let i = 0; i < Row; i++) {
   }
   document.write('&lt;br&gt');
 }`;
+const empty2DArrInput = `
+let blankArr = [];
+let Row = 3;
+let col = 4;
+for (let i = 0; i < Row; i++) {
+  blankArr[i] = [];
+}
+
+for (let i = 0; i < Row; i++) {
+  for (let j = 0; j < col; j++) {
+    blankArr[i][j]=prompt('Enter names');
+    document.write(blankArr[i][j]+ '|' );
+  }
+  document.write('&lt;br&gt');
+}`;
+const ConC = `
+const testArr = ['one', 'two', 'three'];
+
+const Mergre = testArr.concat('four', 'five', 'six');
+console.log(Mergre);`;
+
+const concArr = `
+const FirstArr = ['one', 'two', 'three'];
+const SecArr = ['four', 'five', 'six'];
+
+const Mergre = testArr.concat(SecArr);
+console.log(Mergre);`;

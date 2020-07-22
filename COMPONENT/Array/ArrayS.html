@@ -1,283 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- style css -->
     <link rel="stylesheet" href="../../style.css" />
     <!-- mat icon -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <!-- bootstrap 5 css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    />
     <title>JS TUTORIAL</title>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container-fluid nav_container p-0">
-        <!-- navside bar -->
-        <div class="nav_side animate__animated animate__slideInLeft animate__faster">
-            <span class="material-icons back closed">
-                keyboard_backspace
-            </span>
-            <a href="../../index.html" class="side_logo">
-                <img src="../../src/assets/img/Jslogo.jpg" class="img-fluid" alt="" srcset="" />
+      <!-- navside bar -->
+      <div
+        class="nav_side animate__animated animate__slideInLeft animate__faster"
+      >
+        <span class="material-icons back closed">
+          keyboard_backspace
+        </span>
+        <a href="../../index.html" class="side_logo">
+          <img
+            src="../../src/assets/img/Jslogo.jpg"
+            class="img-fluid"
+            alt=""
+            srcset=""
+          />
+        </a>
+        <div class="navBar_list_bax">
+          <nav class="nav flex-column" id="Topic_Navigation">
+            <a class="nav-link mb-2" href="./../GETSTART/GETSTART.html"
+              >GET STARTED</a
+            >
+            <a class="nav-link mb-2" href="./../VARIABLE/VARIABLE.html"
+              >Variables</a
+            >
+            <a class="nav-link mb-2" href="./../DATA_TYPES/DATA_TYPES.html"
+              >data types</a
+            >
+            <a class="nav-link mb-2" href="./../OPERATORS/OPERATORS.html"
+              >operators</a
+            >
+            <a class="nav-link mb-2" href="./../STATEMENT/STATEMENT.html"
+              >Statement</a
+            >
+            <a class="nav-link mb-2" href="./../ES6/ES6.html">es6</a>
+            <a class="nav-link mb-2" href="">array</a>
+          </nav>
+        </div>
+      </div>
+      <!-- main navbar -->
+      <div class="nav_main">
+        <nav class="navbar navbar-light fixed-top NAVBAR">
+          <div class="container-fluid">
+            <a class="navbar-brand logo" id="open">
+              <span class="material-icons menu">
+                menu
+              </span>
             </a>
-            <div class="navBar_list_bax">
-                <nav class="nav flex-column" id="Topic_Navigation">
-                    <a class="nav-link mb-2" href="./../GETSTART/GETSTART.html">GET STARTED</a>
-                    <a class="nav-link mb-2" href="./../VARIABLE/VARIABLE.html">Variables</a>
-                    <a class="nav-link mb-2" href="./../DATA_TYPES/DATA_TYPES.html">data types</a>
-                    <a class="nav-link mb-2" href="./../OPERATORS/OPERATORS.html">operators</a>
-                    <a class="nav-link mb-2" href="./../STATEMENT/STATEMENT.html">Statement</a>
-                    <a class="nav-link mb-2" href="./../ES6/ES6.html">es6</a>
-                    <a class="nav-link mb-2" href="">array</a>
-                </nav>
-            </div>
-        </div>
-        <!-- main navbar -->
-        <div class="nav_main">
-            <nav class="navbar navbar-light fixed-top NAVBAR">
-                <div class="container-fluid">
-                    <a class="navbar-brand logo" id="open">
-                        <span class="material-icons menu">
-                            menu
-                        </span>
-                    </a>
-                    <a class="will_only_mobile">
-                        <span class="material-icons topic_list_btn" onclick="openList()">
-                            more_vert
-                        </span>
-                    </a>
-                </div>
-                <div class="main_heading">Array</div>
-            </nav>
-            <!--  -->
-            <div class="container-fluid" id="component" style="height: 100vh;">
-                <!----------------------------------------------->
-                <!-----------------end page content--------------->
-                <!----------------------------------------------->
-                <div class="row intro">
-                    <div class="col-lg-9 tab-content" style=" background-color: white;">
-
-                        <!-- tab 1 -->
-                        <div class="tab-pane active" id="tab1">
-                            <h1 class="topic-nav-heading">What is aaray</h1>
-                            <p>Array in data item of collection. syntax - <span class="imp">[ ]</span></p>
-                            <p>Array in data may be data type <span class="imp">string,number,Boolean etc.</span></p>
-                            <p>In array put mulipale data items</p>
-                            <p>In java script , array is special types of object</p>
-                            <div id="WTArray" class="SCode">
-                                <script type="module">
-                                    import Arrays from './Arrays.js';
-                                    const Scode = new Arrays('#WTArray');
-                                    Scode.source_code('syntex', Scode.arithm(),'js');
-                                </script>
-                            </div>
-                        </div>
-                        <!-- tab 2 -->
-                        <div class="tab-pane" id="tab2">
-                            <h1 class="topic-nav-heading">Declaration and Initialization of Array</h1>
-                            <h3 class="type">Declaration and Initialization of Array in Two ways</h3>
-                            <h4 class="type_item">1. using Array Literal</h4>
-                            <p>Array indexing always start from <span class="imp"> 0,1,2....n</span></p>
-                            <div id="A_Literal" class="SCode">
-                                <script type="module">
-                                    import Arrays from './Arrays.js';
-                                    const Scode = new Arrays('#A_Literal');
-                                    Scode.source_code('syntex', Scode.Arr_Literal(),'js');
-                                </script>
-                            </div>
-                            <hr>
-                            <h4 class="type_item">2. using Array constructor</h4>
-                            <div id="Co_Array" class="SCode">
-                                <script type="module">
-                                    import Arrays from './Arrays.js';
-                                    const Scode = new Arrays('#Co_Array');
-                                    //source_code(file,method);
-                                    Scode.source_code('syntex', Scode.Co_arr(),'js');
-                                </script>
-                            </div>
-                            <p>if we use single number value in Array constructor so that is not value of array, it is
-                                length of array.</p>
-                            <h4>example-</h4>
-                            <p><span class="imp">const name = new Array(5)</span> is length of array. not value</p>
-                            <div class="note">
-                                <p>if value are number,in that condition not use Array constructor.use only Array
-                                    Literal</p>
-                            </div>
-                        </div>
-                        <!-- tab 3 -->
-                        <div class="tab-pane" id="tab3">
-                            <h1 class="topic-nav-heading">Modifying Array </h1>
-                            <p>In Modifying Array , override to array vlue using <span class="imp">indexing</span></p>
-                            <div id="modeA" class="SCode">
-                                <script type="module">
-                                    import Arrays from './Arrays.js';
-                                    const Scode = new Arrays('#modeA');
-                                    //source_code(file,method);
-                                    Scode.source_code('main', Scode.ModeArr(),'js');
-                                </script>
-                            </div>
-                        </div>
-                        <!-- tab 4  -->
-                        <div class="tab-pane" id="tab4">
-                            <h1 class="topic-nav-heading"> Removing Array Element</h1>
-                            <p>Use <span class="imp">Delete</span> operator for Removing Array Element</p>
-                            <p>when <span class="imp">Delete</span> to Array Element so Deleted space is <span
-                                    class="imp">undefined</span></p>
-                            <p>when <span class="imp">Deleted</span> to Array Element but not change <span
-                                    class="imp">length of array</span></p>
-                            <div id="removeA" class="SCode">
-                                <script type="module">
-                                    import Arrays from './Arrays.js';
-                                    const Scode = new Arrays('#removeA');
-                                    //source_code(file,method);
-                                    Scode.source_code('main', Scode.Remove_A(),'js');
-                                </script>
-                            </div>
-                        </div>
-                        <!-- tab 5 -->
-                        <div class="tab-pane" id="tab5">
-                            <h1 class="topic-nav-heading"> Array Length Property</h1>
-                            <p>Array Length Property is always start from <span class="imp">1....n</span></p>
-                            <p>Array Length means that , <span class="imp">how many element in array?</span></p>
-                            <p>syntax - <span class="imp">varName.length</span></p>
-                            <h2>Example-</h2>
-                            <div id="length" class="SCode">
-                                <script type="module">
-                                    import Arrays from './Arrays.js';
-                                    const Scode = new Arrays('#length');
-                                    //source_code(file,method);
-                                    Scode.source_code('main', Scode.ALength(),'js');
-                                </script> 
-                            </div>
-                        </div>
-                       <!-- tab 6 -->
-                       <div class="tab-pane" id="tab6">
-                        <h1 class="topic-nav-heading">Iteration of Array using for Loop</h1>
-                        <div id="ArrFor" class="SCode">
-                            <script type="module">
-                             import Arrays from './Arrays.js';
-                             const Scode = new Arrays('#ArrFor');
-                             Scode.source_code('main', Scode.AFor(),'js');
-                            </script>
-                        </div>
-                        <p>this for loop in print all array value but In<span class="imp">( let i=0; i&lt;day.length;i++ )</span> always <span class="imp">i = 0</span></p>
-                       </div>
-                       <!-- tab 7 -->
-                       <div class="tab-pane" id="tab7">
-                        <h1 class="topic-nav-heading">forEach Loop</h1>
-                        <p>forEach Loop also work as For loop but <span class="imp">forEach Loop</span> syntax is eassy.compare then for loop</p>
-                        <p>In ForEach Loop use anonymous <span class="imp">function(){ }</span></p>
-                          <div id="ForEach" class="SCode">
-                              <script type="module">
-                                 import Arrays from './Arrays.js';
-                                 const Scode = new Arrays('#ForEach');
-                                 Scode.source_code('main', Scode.FELoop(),'js');
-                              </script>
-                          </div>
-                          <p>where <span class="imp">V is value</span> and <span class="imp"> I is index </span></p>
-                       </div>
-                        <!-- tab 8 -->
-                        <div class="tab-pane" id="tab8">
-                            <h1 class="topic-nav-heading">for of Loop</h1>
-                            <p>This <span class="imp">for of Loop</span> is ES 6 syntax. it is very eassy compare then other loop.</p>
-                            <p>for of Loop is not for index , only for objects Iteration</p>
-                            <div id="ForOf" class="SCode">
-                                <script type="module">
-                                 import Arrays from './Arrays.js';
-                                 const Scode = new Arrays('#ForOf');
-                                 Scode.source_code('main', Scode.forOfL(),'js');
-                                </script>
-                            </div>
-                        </div>
-                        <!-- tab 9 -->
-                        <div class="tab-pane" id="tab9">
-                           <h1 class="topic-nav-heading">input from user in Arra</h1>
-                           <div id="inputFromU" class="SCode">
-                            <script type="module">
-                             import Arrays from './Arrays.js';
-                             const Scode = new Arrays('#inputFromU');
-                             Scode.source_code('main', Scode.InFoUser(),'js');
-                            </script>
-                        </div>
-                        </div>
-                        <!-- tab 10 -->
-                        <div class="tab-pane" id="tab10">
-                            <h1 class="topic-nav-heading">MultiDimensional Array</h1>  
-                            <p><span class="imp">Array of Array</span> is called to MultiDimensional Array</p>
-                            <p>MultiDimensional Array mey be <span class="imp">2d,3d,4d etc.</span></p>
-                            <div id="MDA" class="SCode">
-                                <script type="module">
-                                    import Arrays from './Arrays.js';
-                                    const Scode = new Arrays('#MDA');
-                                    Scode.source_code('main', Scode.MDA(),'js');
-                                 </script>
-                            </div>
-                        </div>
-                       <!-- tab 11 -->
-                       <div class="tab-pane" id="tab11">
-                        <h1 class="topic-nav-heading">Create Empty 2D Array</h1>  
-                        <div id="Em2dArr" class="SCode">
-                            <script type="module">
-                                import Arrays from './Arrays.js';
-                                const Scode = new Arrays('#Em2dArr');
-                                Scode.source_code('main', Scode.empty2DArray(),'js');
-                             </script>
-                        </div>
-                    </div>
-                    </div>
-                    <!-- tab side bar -->
-                    <div class="col-lg-3 Get_scroll CenterY" style="background: #dfdbdb;">
-                        <div class="list_box Get_scroll">
-                            <nav class="nav flex-column" id="array_topic">
-                                <script type="module">
-                                    import GetTopicList from '../../main.js';
-                                    // new class Obj
-                                    const topicList = new GetTopicList([
-                                        { name: 'what is array' },
-                                        { name: 'Declaration and Initialization of Array' },
-                                        { name: 'Modifying Array' },
-                                        { name: 'Removing Array Element' },
-                                        { name: 'Array Length Property' },
-                                        { name: 'Iteration of Array using for Loop' },
-                                        { name: 'forEach Loop' },
-                                        { name: 'for of Loop' },
-                                        { name: 'input from user in Array' },
-                                        { name: 'Multi-Dimensional Array' },
-                                        { name: 'Create Empty 2D Array' },
-                                    ]);
-                                    // get element id
-                                    topicList.listing('#array_topic');
-                                </script>
-                            </nav>
-                        </div>
-                    </div>
-                    <!-- tab side bar -->
-                </div>
-                <!----------------------------------------------->
-                <!-----------------end page content--------------->
-                <!----------------------------------------------->
-            </div>
-        </div>
+            <a class="will_only_mobile">
+              <span class="material-icons topic_list_btn" onclick="openList()">
+                more_vert
+              </span>
+            </a>
+          </div>
+          <div class="main_heading">Array</div>
+        </nav>
         <!--  -->
+        <div class="container-fluid" id="component" style="height: 100vh;">
+          <!----------------------------------------------->
+          <!-----------------end page content--------------->
+          <!----------------------------------------------->
+          <div class="row intro">
+            <div class="col-lg-9 tab-content" style="background-color: white;">
+              <!-- tab 1 -->
+              <div class="tab-pane active" id="tab1">
+                <h1 class="topic-nav-heading">What is aaray</h1>
+                <p>
+                  Array in data item of collection. syntax -
+                  <span class="imp">[ ]</span>
+                </p>
+                <p>
+                  Array in data may be data type
+                  <span class="imp">string,number,Boolean etc.</span>
+                </p>
+                <p>In array put mulipale data items</p>
+                <p>In java script , array is special types of object</p>
+                <div id="WTArray" class="SCode">
+                  <script type="module">
+                    import Arrays from './Arrays.js';
+                    const Scode = new Arrays('#WTArray');
+                    Scode.source_code('syntex', Scode.arithm(), 'js');
+                  </script>
+                </div>
+              </div>
+              <!-- tab 2 -->
+              <div class="tab-pane" id="tab2">
+                <h1 class="topic-nav-heading">
+                  Declaration and Initialization of Array
+                </h1>
+                <h3 class="type">
+                  Declaration and Initialization of Array in Two ways
+                </h3>
+                <h4 class="type_item">1. using Array Literal</h4>
+                <p>
+                  Array indexing always start from
+                  <span class="imp"> 0,1,2....n</span>
+                </p>
+                <div id="A_Literal" class="SCode">
+                  <script type="module">
+                    import Arrays from './Arrays.js';
+                    const Scode = new Arrays('#A_Literal');
+                    Scode.source_code('syntex', Scode.Arr_Literal(), 'js');
+                  </script>
+                </div>
+                <hr />
+                <h4 class="type_item">2. using Array constructor</h4>
+                <div id="Co_Array" class="SCode">
+                  <script type="module">
+                    import Arrays from './Arrays.js';
+                    const Scode = new Arrays('#Co_Array');
+                    //source_code(file,method);
+                    Scode.source_code('syntex', Scode.Co_arr(), 'js');
+                  </script>
+                </div>
+                <p>
+                  if we use single number value in Array constructor so that is
+                  not value of array, it is length of array.
+                </p>
+                <h4>example-</h4>
+                <p>
+                  <span class="imp">const name = new Array(5)</span> is length
+                  of array. not value
+                </p>
+                <div class="note">
+                  <p>
+                    if value are number,in that condition not use Array
+                    constructor.use only Array Literal
+                  </p>
+                </div>
+              </div>
+              <!-- tab 3 -->
+              <div class="tab-pane" id="tab3">
+                <h1 class="topic-nav-heading">Modifying Array</h1>
+                <p>
+                  In Modifying Array , override to array vlue using
+                  <span class="imp">indexing</span>
+                </p>
+                <div id="modeA" class="SCode">
+                  <script type="module">
+                    import Arrays from './Arrays.js';
+                    const Scode = new Arrays('#modeA');
+                    //source_code(file,method);
+                    Scode.source_code('main', Scode.ModeArr(), 'js');
+                  </script>
+                </div>
+              </div>
+              <!-- tab 4  -->
+              <div class="tab-pane" id="tab4">
+                <h1 class="topic-nav-heading">Removing Array Element</h1>
+                <p>
+                  Use <span class="imp">Delete</span> operator for Removing
+                  Array Element
+                </p>
+                <p>
+                  when <span class="imp">Delete</span> to Array Element so
+                  Deleted space is <span class="imp">undefined</span>
+                </p>
+                <p>
+                  when <span class="imp">Deleted</span> to Array Element but not
+                  change <span class="imp">length of array</span>
+                </p>
+                <div id="removeA" class="SCode">
+                  <script type="module">
+                    import Arrays from './Arrays.js';
+                    const Scode = new Arrays('#removeA');
+                    //source_code(file,method);
+                    Scode.source_code('main', Scode.Remove_A(), 'js');
+                  </script>
+                </div>
+              </div>
+              <!-- tab 5 -->
+              <div class="tab-pane" id="tab5">
+                <h1 class="topic-nav-heading">Array Length Property</h1>
+                <p>
+                  Array Length Property is always start from
+                  <span class="imp">1....n</span>
+                </p>
+                <p>
+                  Array Length means that ,
+                  <span class="imp">how many element in array?</span>
+                </p>
+                <p>syntax - <span class="imp">varName.length</span></p>
+                <h2>Example-</h2>
+                <div id="length" class="SCode">
+                  <script type="module">
+                    import Arrays from './Arrays.js';
+                    const Scode = new Arrays('#length');
+                    //source_code(file,method);
+                    Scode.source_code('main', Scode.ALength(), 'js');
+                  </script>
+                </div>
+              </div>
+              <!-- tab 6 -->
+              <div class="tab-pane" id="tab6">
+                <h1 class="topic-nav-heading">
+                  Iteration of Array using for Loop
+                </h1>
+                <div id="ArrFor" class="SCode">
+                  <script type="module">
+                    import Arrays from './Arrays.js';
+                    const Scode = new Arrays('#ArrFor');
+                    Scode.source_code('main', Scode.AFor(), 'js');
+                  </script>
+                </div>
+                <p>
+                  this for loop in print all array value but In<span class="imp"
+                    >( let i=0; i&lt;day.length;i++ )</span
+                  >
+                  always <span class="imp">i = 0</span>
+                </p>
+              </div>
+              <!-- tab 7 -->
+              <div class="tab-pane" id="tab7">
+                <h1 class="topic-nav-heading">forEach Loop</h1>
+                <p>
+                  forEach Loop also work as For loop but
+                  <span class="imp">forEach Loop</span> syntax is eassy.compare
+                  then for loop
+                </p>
+                <p>
+                  In ForEach Loop use anonymous
+                  <span class="imp">function(){ }</span>
+                </p>
+                <div id="ForEach" class="SCode">
+                  <script type="module">
+                    import Arrays from './Arrays.js';
+                    const Scode = new Arrays('#ForEach');
+                    Scode.source_code('main', Scode.FELoop(), 'js');
+                  </script>
+                </div>
+                <p>
+                  where <span class="imp">V is value</span> and
+                  <span class="imp"> I is index </span>
+                </p>
+              </div>
+              <!-- tab 8 -->
+              <div class="tab-pane" id="tab8">
+                <h1 class="topic-nav-heading">for of Loop</h1>
+                <p>
+                  This <span class="imp">for of Loop</span> is ES 6 syntax. it
+                  is very eassy compare then other loop.
+                </p>
+                <p>for of Loop is not for index , only for objects Iteration</p>
+                <div id="ForOf" class="SCode">
+                  <script type="module">
+                    import Arrays from './Arrays.js';
+                    const Scode = new Arrays('#ForOf');
+                    Scode.source_code('main', Scode.forOfL(), 'js');
+                  </script>
+                </div>
+              </div>
+              <!-- tab 9 -->
+              <div class="tab-pane" id="tab9">
+                <h1 class="topic-nav-heading">input from user in Arra</h1>
+                <div id="inputFromU" class="SCode">
+                  <script type="module">
+                    import Arrays from './Arrays.js';
+                    const Scode = new Arrays('#inputFromU');
+                    Scode.source_code('main', Scode.InFoUser(), 'js');
+                  </script>
+                </div>
+              </div>
+              <!-- tab 10 -->
+              <div class="tab-pane" id="tab10">
+                <h1 class="topic-nav-heading">MultiDimensional Array</h1>
+                <p>
+                  <span class="imp">Array of Array</span> is called to
+                  MultiDimensional Array
+                </p>
+                <p>
+                  MultiDimensional Array mey be
+                  <span class="imp">2d,3d,4d etc.</span>
+                </p>
+                <div id="MDA" class="SCode">
+                  <script type="module">
+                    import Arrays from './Arrays.js';
+                    const Scode = new Arrays('#MDA');
+                    Scode.source_code('main', Scode.MDA(), 'js');
+                  </script>
+                </div>
+              </div>
+              <!-- tab 11 -->
+              <div class="tab-pane" id="tab11">
+                <h1 class="topic-nav-heading">Create Empty 2D Array</h1>
+                <div id="Em2dArr" class="SCode">
+                  <script type="module">
+                    import Arrays from './Arrays.js';
+                    const Scode = new Arrays('#Em2dArr');
+                    Scode.source_code('main', Scode.empty2DArray(), 'js');
+                  </script>
+                </div>
+              </div>
+              <!--tab 12  -->
+              <div class="tab-pane" id="tab12">
+                <h1 class="topic-nav-heading">
+                  get Input from user in 2D Array
+                </h1>
+                <p>in which use input in secondary for loop</p>
+                <div id="TwoDArrInput" class="SCode">
+                  <script type="module">
+                    import Arrays from './Arrays.js';
+                    const Scode = new Arrays('#TwoDArrInput');
+                    Scode.source_code('main', Scode.empty2DArrInputs(), 'js');
+                  </script>
+                </div>
+              </div>
+              <!-- tab 13 -->
+              <div class="tab-pane" id="tab13">
+                <h1 class="topic-nav-heading">
+                Method concat( )
+                </h1>
+                <p>concat method is use for merge to two or more array</p>
+                <p>it is not change to existing array and it's return new array</p>
+                <p>merge value in array <br> Syntax - <span class="imp">
+                    const secArr = primary_array.concat(value1,value2,value3..);
+                </span></p>
+                <h3>Example -</h3>
+                <div id="Concat" class="SCode">
+                    <script type="module">
+                        import Arrays from './Arrays.js';
+                        const Scode = new Arrays('#Concat');
+                        Scode.source_code('main', Scode.concM(), 'js');
+                    </script>
+                </div>
+                <hr>
+                <p>merge array in array <br> Syntax - <span class="imp">
+                    const secArr = primary_array.concat(secondary_array);
+                </span></p>
+                <div id="ConcatArr" class="SCode">
+                    <script type="module">
+                        import Arrays from './Arrays.js';
+                        const Scode = new Arrays('#ConcatArr');
+                        Scode.source_code('main', Scode.concArray(), 'js');
+                    </script>
+                </div>
+              </div>
+            </div>
+            <!-- tab side bar -->
+            <div
+              class="col-lg-3 Get_scroll CenterY"
+              style="background: #dfdbdb;"
+            >
+              <div class="list_box Get_scroll">
+                <nav class="nav flex-column" id="array_topic">
+                  <script type="module">
+                    import GetTopicList from '../../main.js';
+                    // new class Obj
+                    const topicList = new GetTopicList([
+                      { name: 'what is array' },
+                      { name: 'Declaration and Initialization of Array' },
+                      { name: 'Modifying Array' },
+                      { name: 'Removing Array Element' },
+                      { name: 'Array Length Property' },
+                      { name: 'Iteration of Array using for Loop' },
+                      { name: 'forEach Loop' },
+                      { name: 'for of Loop' },
+                      { name: 'input from user in Array' },
+                      { name: 'Multi-Dimensional Array' },
+                      { name: 'Create Empty 2D Array' },
+                      { name: ['get Input from user in 2D Array',`<hr>`] },
+                      { name: 'Method concat' },
+                    ]);
+                    // get element id
+                    topicList.listing('#array_topic');
+                  </script>
+                </nav>
+              </div>
+            </div>
+            <!-- tab side bar -->
+          </div>
+          <!----------------------------------------------->
+          <!-----------------end page content--------------->
+          <!----------------------------------------------->
+        </div>
+      </div>
+      <!--  -->
     </div>
-</body>
-<!-- Component.js -->
-<script src="../Array/Arrays.js"></script>
-<!-- main.js -->
-<script src="../../main.js"></script>
-<!-- prism js -->
-<script src="../../src/assets/Js/prism.js"></script>
-<!-- sidenav -->
-<script src="../../src/assets/Js/sidenav.js"></script>
-<!-- here bootstrap js -->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
-<script>
-
-</script>
-
+  </body>
+  <!-- Component.js -->
+  <script src="../Array/Arrays.js"></script>
+  <!-- main.js -->
+  <script src="../../main.js"></script>
+  <!-- prism js -->
+  <script src="../../src/assets/Js/prism.js"></script>
+  <!-- sidenav -->
+  <script src="../../src/assets/Js/sidenav.js"></script>
+  <!-- here bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+  <script></script>
 </html>
