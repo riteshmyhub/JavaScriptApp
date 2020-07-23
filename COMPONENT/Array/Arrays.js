@@ -52,8 +52,17 @@ export default class Arrays extends SourceCode {
   concM() {
     return `${ConC}`;
   }
-  concArray(){
-    return`${concArr}`;
+  concArray() {
+    return `${concArr}`;
+  }
+  joinMethood() {
+    return `${Joi}`;
+  }
+  revs() {
+    return `${rev}`;
+  }
+  sliceArray() {
+    return `${sliceArr}`;
   }
 }
 // ====================================================================
@@ -191,3 +200,18 @@ const SecArr = ['four', 'five', 'six'];
 
 const Mergre = testArr.concat(SecArr);
 console.log(Mergre);`;
+// join method
+const Joi = `
+const test = ['one', 'two', 'three'];
+let somes = test.join(' (or) ');
+document.write('select any number : - '+somes);
+//output is - select any number :  one (or) two (or) three (or)`;
+
+const rev = `
+const arr = ['one', 'two', 'three'];
+arr.reverse()// output in ["three","two","one"]`;
+
+const sliceArr = `
+const arr = ['one', 'two', 'three', 'four', 'five', 'six'];
+const ssss = arr.slice(1,5);
+console.log(ssss);// output : 'two', 'three', 'four', 'five'`;

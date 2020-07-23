@@ -355,6 +355,50 @@
                     </script>
                 </div>
               </div>
+              <!-- tab 14 -->
+              <div  class="tab-pane" id="tab14">
+                <h1 class="topic-nav-heading">
+                  join Methood( )
+                  </h1>
+                  <p>In join method use separator Example - array.join('@!#$%^&* or any symbol') </p>
+                  <p>join method is return "string"</p>
+                  <div id="join">
+                    <script type="module">
+                      import Arrays from './Arrays.js';
+                      const Scode = new Arrays('#join');
+                      Scode.source_code('main', Scode.joinMethood(), 'js');
+                  </script>
+                  </div>
+              </div>
+              <!-- tab 15 -->
+              <div class="tab-pane" id="tab15">
+                <h1 class="topic-nav-heading">
+                  Method reverse( )
+                </h1>
+               <p>reverse method in arrange array value in reverse order</p>
+               <div id="reverse">
+                <script type="module">
+                  import Arrays from './Arrays.js';
+                  const Scode = new Arrays('#reverse');
+                  Scode.source_code('main', Scode.revs(), 'js');
+              </script>
+              </div>
+              </div>
+              <!-- tab 16 -->
+              <div class="tab-pane" id="tab16">
+                <h1 class="topic-nav-heading">Method Slice</h1>
+                <p>In Slice() method , Slice it given array then put in new array.</p>
+                <img src="../../src/assets/img/slice.png" class="img-fluid" alt="" srcset="">
+                <hr>
+                <h2>Example</h2>
+                <div id="sliceArray">
+                  <script type="module">
+                    import Arrays from './Arrays.js';
+                    const Scode = new Arrays('#sliceArray');
+                    Scode.source_code('main', Scode.sliceArray(), 'js');
+                </script>
+                </div>
+              </div>
             </div>
             <!-- tab side bar -->
             <div
@@ -380,6 +424,9 @@
                       { name: 'Create Empty 2D Array' },
                       { name: ['get Input from user in 2D Array',`<hr>`] },
                       { name: 'Method concat' },
+                      { name: 'Method join' },
+                      { name: 'Method reverse' },
+                      { name: 'Method Slice' },
                     ]);
                     // get element id
                     topicList.listing('#array_topic');
