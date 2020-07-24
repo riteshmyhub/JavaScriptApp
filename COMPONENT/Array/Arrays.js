@@ -64,6 +64,12 @@ export default class Arrays extends SourceCode {
   sliceArray() {
     return `${sliceArr}`;
   }
+  isArr() {
+    return `${ISarr}`;
+  }
+  Spc() {
+    return `${spliceM}`;
+  }
 }
 // ====================================================================
 // ============================source code============================
@@ -215,3 +221,15 @@ const sliceArr = `
 const arr = ['one', 'two', 'three', 'four', 'five', 'six'];
 const ssss = arr.slice(1,5);
 console.log(ssss);// output : 'two', 'three', 'four', 'five'`;
+
+const ISarr = `
+const check_o = ['one', 'two', 'three'];
+const check_t = 'str';
+const checkingTo = Array.isArray(check_o);
+
+console.log(checkingTo); //output is true`;
+const spliceM = `
+const TestArr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
+TestArr.splice(6,5,'New_X','New_Y','New_Z');
+console.log(TestArr);// output a,b,c,d,e,New_X,New_Y,New_Z; `;
+

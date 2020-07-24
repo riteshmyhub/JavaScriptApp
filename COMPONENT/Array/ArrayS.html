@@ -399,6 +399,42 @@
                 </script>
                 </div>
               </div>
+              <!-- tab 17 -->
+              <div class="tab-pane" id="tab17">
+                <h1 class="topic-nav-heading">Method Array.isArray()</h1>
+                <p>It is check to value , that value is array or not? if value is array so return true else false.</p>
+                <p>syntax : <br>
+                  Array.isArray(value)</p>
+                  <div id="isArray">
+                    <script type="module">
+                      import Arrays from './Arrays.js';
+                      const Scode = new Arrays('#isArray');
+                      Scode.source_code('main', Scode.isArr(), 'js');
+                  </script>
+                  </div>
+              </div>
+              <!-- tab 18 -->
+              <div class="tab-pane" id="tab18">
+                <h1 class="topic-nav-heading">Method splice()</h1>
+                <p>splice() method is change content of array </p>
+                <p>splice() method is <span class="imp">remove or add</span> to array in element</p>
+                <p>this splice() method is change to <span class="imp">real array</span></p>
+                <hr>
+                <p>syntax: <br>
+                 <span class="imp">nameOfArray.splice( start , deleletCount , replaceValue );</span></p>
+                  <p>In splice() method has 3 argument</p>
+                  <img src="../../src/assets/img/spliceM.png" class="img-fluid" alt="">
+                <hr>
+                <h4>Example</h4>
+                <div id="splice">
+                  <script type="module">
+                    import Arrays from './Arrays.js';
+                    const Scode = new Arrays('#splice');
+                    Scode.source_code('main', Scode.Spc(), 'js');
+                </script>
+                </div>
+              </div>
+              
             </div>
             <!-- tab side bar -->
             <div
@@ -427,6 +463,8 @@
                       { name: 'Method join' },
                       { name: 'Method reverse' },
                       { name: 'Method Slice' },
+                      { name: 'Method ArrayisArray' },
+                      { name: 'Method splice' },
                     ]);
                     // get element id
                     topicList.listing('#array_topic');
