@@ -70,6 +70,9 @@ export default class Arrays extends SourceCode {
   Spc() {
     return `${spliceM}`;
   }
+  IndOf(){
+    return `${InOf}`
+  }
 }
 // ====================================================================
 // ============================source code============================
@@ -232,4 +235,12 @@ const spliceM = `
 const TestArr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
 TestArr.splice(6,5,'New_X','New_Y','New_Z');
 console.log(TestArr);// output a,b,c,d,e,New_X,New_Y,New_Z; `;
+
+const InOf = `
+const TestArr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
+const search = TestArr.indexOf('c');
+console.log(search)//output in 2 ;
+
+const search = TestArr.indexOf('c',1);// 1 is in index of array
+console.log(search)//output in 2 ;`;
 

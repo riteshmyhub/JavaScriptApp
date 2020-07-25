@@ -434,7 +434,31 @@
                 </script>
                 </div>
               </div>
-              
+               <!-- tab 19 -->
+               <div class="tab-pane" id="tab19">
+                <h1 class="topic-nav-heading">Method indexOf( )</h1>
+                <p>this <span class="imp">indexOf( )</span>  method is find item in array.if this method is find item in array so return that <span class="imp">Item of Index of array</span>.</p>
+                <p>if not find Item so return <span class="imp">-1</span></p>
+                <p>this method is find to Item from <span class="imp">starting point </span> in Array , when in method has only <span class="imp" >first argument itemName</span>
+                </p>
+                <p>if has same item name of Two item so this method is always find first element.</p>
+                <hr>
+                <p>syntax : <br>
+                 <span class="imp">const search = NameArray.indexOf(itemName,start)</span></p>
+                <p>In this <span class="imp">indexOf(itemName,start)</span> has two argument. 
+                <br>
+                1. itemName - here put itemName like - string,number etc. <br> 
+                2. start - here enter index number , where from to start?</p>
+                <hr>
+                <h4>Example-</h4>
+                <div id="indexOfI">
+                  <script type="module">
+                    import Arrays from './Arrays.js';
+                    const Scode = new Arrays('#indexOfI');
+                    Scode.source_code('main', Scode.IndOf(), 'js');
+                </script>
+                </div>
+               </div>
             </div>
             <!-- tab side bar -->
             <div
@@ -465,6 +489,7 @@
                       { name: 'Method Slice' },
                       { name: 'Method ArrayisArray' },
                       { name: 'Method splice' },
+                      { name: 'Method indexOf' },
                     ]);
                     // get element id
                     topicList.listing('#array_topic');
