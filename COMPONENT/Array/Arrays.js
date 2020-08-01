@@ -70,8 +70,11 @@ export default class Arrays extends SourceCode {
   Spc() {
     return `${spliceM}`;
   }
-  IndOf(){
-    return `${InOf}`
+  IndOf() {
+    return `${InOf}`;
+  }
+  fillmet(){
+    return `${fillM}`
   }
 }
 // ====================================================================
@@ -243,4 +246,23 @@ console.log(search)//output in 2 ;
 
 const search = TestArr.indexOf('c',1);// 1 is in index of array
 console.log(search)//output in 2 ;`;
+
+const fillM = `
+const outputD = ['A', 'B', 'C', 'D', 'E', 'F'];
+outputD.fill('😂', 1, 4);
+console.log(outputD);
+// output = "A", "😂", "😂", "😂", "E", "F"
+
+//-----------------------with one argument-----------------
+const outputD = ['A', 'B', 'C', 'D', 'E', 'F'];
+outputD.fill('😃');
+console.log(outputD);
+//output =  "😃", "😃", "😃", "😃", "😃", "😃";
+
+// -----------------------fill method with array constructor
+let dataEpmty = new Array(3);
+dataEpmty.fill("🤣")
+document.write(dataEpmty)//output 🤣🤣🤣`;
+
+const unshiftme = [];
 

@@ -168,7 +168,7 @@ pre {
   font-weight: 800 !important;
 }
 .main_heading {
-  color: #FFCF2A;
+  color: #ffcf2a;
   background-color: #21242d;
   width: 100%;
   font-size: 20px;
@@ -177,14 +177,14 @@ pre {
   padding: 0px 0px 0px 20px;
   font-weight: 800;
 }
-.note{
+.note {
   padding: 36px 4px 10px 4px;
   background-color: rgb(243, 216, 129);
   position: relative;
 }
-.note::before{
+.note::before {
   content: 'note';
-  background-color: #2D2D2D;
+  background-color: #2d2d2d;
   color: white;
   padding: 6px 10px 6px 10px;
   text-transform: uppercase;
@@ -230,4 +230,15 @@ pre {
     text-transform: uppercase;
     font-weight: 500 !important;
   }
+}
+/* div{
+ counter-reset: Maincounter 0;
+}
+h4::before {
+  content: 'step ' counter(Maincounter) ' : ';
+  counter-increment: Maincounter 1;
+  color: red;
+} */
+.test{
+  display: none;
 }

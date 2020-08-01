@@ -459,6 +459,31 @@
                 </script>
                 </div>
                </div>
+               <!-- tab 20 -->
+               <div class="tab-pane" id="tab20">
+                <h1 class="topic-nav-heading">Method fill( )</h1>
+                <p>fill method is fill static value in array <br>
+                syntax - nameArray.fill(endvalue,start,end)</p>
+                <p>in this mathod is three argument</p>
+                <p>If in this method has only one argument value fill(endvalue) so this value is replace to all array array item.</p>
+                <p>If in fill() method has (value + start + end) all argument so end point not include <br>
+                example : nameArray.fill("test",1,3)</p>
+                <div id="fill">
+                  <script type="module">
+                    import Arrays from './Arrays.js';
+                    const Scode = new Arrays('#fill');
+                    Scode.source_code('main', Scode.fillmet(), 'js');
+                </script>
+                </div>
+               </div>
+                <!-- tab 21 -->
+                <div class="tab-pane" id="tab21">
+                  <h1 class="topic-nav-heading">Method unshift( )</h1>
+                  <p>we add <span class="imp">n</span> number of item in array from <span class="imp">beginning point</span> by unshift( ) method. <br>
+                  syntax : <span class="imp">unshift(Enter itme......n)</span></p>
+                  <p>This unshift( ) method is not only <span class="imp">add item</span>  in array but also return <span class="imp">length of array</span></p>
+                  <p>This length of array is also included With <span class="imp">new item + old item length of array</span> by using to unshift( ) method</p>
+                </div>
             </div>
             <!-- tab side bar -->
             <div
@@ -490,6 +515,8 @@
                       { name: 'Method ArrayisArray' },
                       { name: 'Method splice' },
                       { name: 'Method indexOf' },
+                      { name: 'Method fill' },
+                      { name: 'Method unshift'},
                     ]);
                     // get element id
                     topicList.listing('#array_topic');
