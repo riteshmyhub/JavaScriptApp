@@ -1,6 +1,29 @@
-### 💻 Java script app
+# 🌐 Java script app
 
-<!--  -->
-<a href="https://riteshmyhub.github.io/JavaScriptApp/" target="_blank">
-<img src="./TempPreview/screen1.png" alt="" srcset="">
-</a>
+---
+
+> ## Preview
+
+<!-- img -->
+
+![Visit java script App](./TempPreview/screen1.png)
+
+<!-- link -->
+
+[🔗 VISIT NOW](https://riteshmyhub.github.io/JavaScriptApp/)
+
+---
+
+> ## [ Source code , block diagram , mobile responsive ]
+
+<!-- img -->
+
+![Visit java script App](./TempPreview/screen2.png)
+
+---
+
+> ## Topics
+
+### Core java script
+
+### Advanced JavaScript

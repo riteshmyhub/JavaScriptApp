@@ -73,8 +73,20 @@ export default class Arrays extends SourceCode {
   IndOf() {
     return `${InOf}`;
   }
-  fillmet(){
-    return `${fillM}`
+  fillmet() {
+    return `${fillM}`;
+  }
+  unshiftMethod() {
+    return `${unshiftme}`;
+  }
+  pushMet() {
+    return `${pushVar}`;
+  }
+  shiftMet() {
+    return `${shiftVar}`;
+  }
+  popMet(){
+    return `${popVar}`
   }
 }
 // ====================================================================
@@ -264,5 +276,26 @@ let dataEpmty = new Array(3);
 dataEpmty.fill("🤣")
 document.write(dataEpmty)//output 🤣🤣🤣`;
 
-const unshiftme = [];
+const unshiftme = `
+const unshiftme = ['one', 'two', 'three', 'four'];
+unshiftme.unshift('zero');//can add ...n number of item
+console.log(unshiftme); //output zero,one,two,three,four`;
+
+const pushVar = `
+const test = ['one', 'two', 'three', 'four'];
+test.push('last'); //can add ...n number of item
+console.log(test); //output one,two,three,four,last`;
+
+const shiftVar = `
+const test = ['one', 'two', 'three', 'four'];
+test.shift();//Remove first item from array
+test.shift(); //Remove second item from array
+console.log(test); //output hree,four`;
+
+const popVar = `
+const test = ['one', 'two', 'three', 'four'];
+test.pop(); //Remove first item from array
+test.pop(); //Remove second item from array
+console.log(test); //output one,two`;
+
 
