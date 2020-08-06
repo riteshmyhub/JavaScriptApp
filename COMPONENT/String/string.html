@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!-- bootstrap 5 css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" />
-    <title>JS TUTORIAL</title>
+    <title>JS TUTORIAL | String</title>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 
@@ -33,7 +33,7 @@
                     <a class="nav-link mb-2" href="">Statement</a>
                     <a class="nav-link mb-2" href="./../ES6/ES6.html">es6</a>
                     <a class="nav-link mb-2" href="./../Array/ArrayS.html">array</a>
-                    <a class="nav-link mb-2" href="./../String/string.html">string</a>
+                    <a class="nav-link mb-2" href="">string</a>
                 </nav>
             </div>
         </div>
@@ -52,7 +52,7 @@
                         </span>
                     </a>
                 </div>
-                <div class="main_heading">Statements</div>
+                <div class="main_heading">string</div>
             </nav>
             <!--  -->
             <div class="container-fluid" id="component" style="height: 100vh;">
@@ -64,22 +64,24 @@
 
                         <!-- tab 1 -->
                         <div class="tab-pane active" id="tab1">
-                            <h1 class="topic-nav-heading">If Statements</h1>
-                            <p>In <span class="imp"> If Statements </span> has two condition - <span class="imp">true &
-                                    false</span>.</p>
-
-                            <p>In <span class="imp"> If Statements </span> condition is true so execute code</p>
-
-                            <p>In <span class="imp"> If Statements </span> condition is false so not execute code</p>
-                            <h3>Example</h3>
-                            <div id="If" class="SCode">
-                                <script type="module">
-                                    import Statements from './STATEMENT.js';
-                                    const Scode = new Statements('#If');
-                                    Scode.source_code('main', Scode.syntax(),'js');
-                                </script>
-                            </div>
-
+                            <h1 class="topic-nav-heading">
+                                What in string
+                            </h1>
+                            <p>group of character is called string ex - "hi how are you"</p>
+                            <p>if any number writer in double court so that is not a number It's string,</p>
+                            <p>write string in three type 1 - " " 2 -'' 3-``</p>
+                            <hr>
+                            <h3 class="type">string assignment way</h3>
+                            <h5 class="type_item">1 primitve</h5>
+                            <p>primitve is "string" type
+                                syntax : <span class="imp">const test = 'hello';</span></p>
+                            <hr>
+                            <h5 class="type_item">2 constructor</h5>
+                            <p>constructor in object type
+                                syntax : <span class="imp">const name = new String("hello");</span></p>
+                             <div class="note">
+                                 <p>execution its String <span class="imp">constructor slow</span></p>
+                             </div>   
                         </div>
 
                     </div>
@@ -91,9 +93,8 @@
                                     import GetTopicList from '../../main.js';
                                     // new class Obj
                                     const topicList = new GetTopicList([
-                                        { name: 'if Statements' },
-                                        { name: 'Else Statement' },
-                                    ]);
+                                        { name: 'what in string' },
+                                      ]);
                                     // get element id
                                     topicList.listing('#state_topic');
                                 </script>
@@ -111,7 +112,7 @@
     </div>
 </body>
 <!-- Component.js -->
-<script src="../STATEMENT/STATEMENT.js"></script>
+<script src="../String/string.js"></script>
 <!-- main.js -->
 <script src="../../main.js"></script>
 <!-- prism js -->
