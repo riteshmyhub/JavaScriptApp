@@ -83,7 +83,25 @@
                                  <p>execution its String <span class="imp">constructor slow</span></p>
                              </div>   
                         </div>
-
+                      <!-- tab 2 -->
+                      <div class="tab-pane" id="tab2">
+                        <h1 class="topic-nav-heading">
+                            String Concatenation
+                        </h1>
+                        <p>In String Concatenation , we concet to two string</p>
+                        <p>for concat to string ,use <span class="imp">+ operator</span> <br>
+                        Example : <span class="imp">document.write("hello"+"js")</span></p>
+                        <hr>
+                        <h2>Concat() method</h2>
+                        <p>In this method , pass <span class="imp">n number</span> of argument.</p>
+                        <div id="concat">
+                            <script type="module">
+                           import StringTopic from "./String.js"
+                           const str = new StringTopic('#concat');
+                           str.source_code('main',str.Conc(),'js')
+                            </script>
+                        </div>
+                      </div>
                     </div>
                     <!-- tab side bar -->
                     <div class="col-lg-3 Get_scroll CenterY" style="background: #dfdbdb;">
@@ -94,6 +112,7 @@
                                     // new class Obj
                                     const topicList = new GetTopicList([
                                         { name: 'what in string' },
+                                        { name: 'String Concatenation ' },
                                       ]);
                                     // get element id
                                     topicList.listing('#state_topic');
@@ -112,9 +131,9 @@
     </div>
 </body>
 <!-- Component.js -->
-<script src="../String/string.js"></script>
+<script src="../String/String.js"></script>
 <!-- main.js -->
-<script src="../../main.js"></script>
+<script type="module" src="../../main.js"></script>
 <!-- prism js -->
 <script src="../../src/assets/Js/prism.js"></script>
 <!-- sidenav -->
