@@ -102,6 +102,27 @@
                             </script>
                         </div>
                       </div>
+                       <!-- tab 3 -->
+                       <div class="tab-pane" id="tab3">
+                        <h1 class="topic-nav-heading">
+                            Template Literal
+                        </h1>
+                        <p>In Template Literal , ues <span class="imp">Back-tick (``)</span></p>
+                        <p>we can write multiple line using to Back-tick (``)</p>
+                        <hr>
+                        <h2>String interpolation</h2>
+                        <p>Syntax : <br>
+                        <span class="imp">`${expression}`</span></p>
+                        <p>In expression , we can put <span class="imp">mathematics expression,variable , function call</span> etc.</p>
+                        <p>String interpolation is only work with <span class="imp">Back-tick (``)</span></p>
+                        <div id="interpolation">
+                            <script type="module">
+                           import StringTopic from "./String.js"
+                           const str = new StringTopic('#interpolation');
+                           str.source_code('main',str.BackT(),'js')
+                            </script>
+                        </div>
+                       </div>
                     </div>
                     <!-- tab side bar -->
                     <div class="col-lg-3 Get_scroll CenterY" style="background: #dfdbdb;">
@@ -113,6 +134,7 @@
                                     const topicList = new GetTopicList([
                                         { name: 'what in string' },
                                         { name: 'String Concatenation ' },
+                                        { name: 'Template Literal' },
                                       ]);
                                     // get element id
                                     topicList.listing('#state_topic');
