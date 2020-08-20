@@ -123,6 +123,119 @@
                             </script>
                         </div>
                        </div>
+                       <!-- tab 4 -->
+                       <div class="tab-pane" id="tab4">
+                        <h1 class="topic-nav-heading">
+                            string method & property
+                        </h1>
+                        <hr>
+                        <h2>String Length</h2>
+                        <p>this method is return specifics position (index) of string letter</p>
+                        <div id="strL">
+                            <script type="module">
+                           import StringTopic from "./Strings.js"
+                           const str = new StringTopic('#strL');
+                           str.source_code('main',str.strL(),'js')
+                            </script>
+                        </div>
+                        <hr>
+                        <h2>charAt()</h2>
+                        <p>this method is return specifics position (index) of string letter</p>
+                        <div id="CharAA">
+                            <script type="module">
+                           import StringTopic from "./Strings.js"
+                           const str = new StringTopic('#CharAA');
+                           str.source_code('main',str.CharAA(),'js')
+                            </script>
+                        </div>
+                        <hr>
+                        <h2>charCodeAt()</h2>
+                        <p>this method is return unicode of string letter</p>
+                        <div id="CharCodes">
+                            <script type="module">
+                           import StringTopic from "./Strings.js"
+                           const str = new StringTopic('#CharCodes');
+                           str.source_code('main',str.CharCodes(),'js')
+                            </script>
+                        </div>
+                        <hr>
+                        <h2>toUpperCase() and toLowerCase()</h2>
+                        <p><span class="imp">toUpperCase</span> : this method is convert to string in UpperCase</p>
+                        <p><span class="imp">toLowerCase</span> : this method is convert to string in LowerCase</p>
+                        <div id="StrCase">
+                            <script type="module">
+                           import StringTopic from "./Strings.js"
+                           const str = new StringTopic('#StrCase');
+                           str.source_code('main',str.StrCase(),'js')
+                            </script>
+                        </div>
+                        <hr>
+                        <h2>trim()</h2>
+                        <p>trim Method is remove whitespace from string</p>
+                        <p>this method is only remove whitespace from stating , ending but not between</p>
+                        <div id="Strtrim">
+                            <script type="module">
+                           import StringTopic from "./Strings.js"
+                           const str = new StringTopic('#Strtrim');
+                           str.source_code('main',str.Strtrim(),'js')
+                            </script>
+                        </div>
+                        <hr>
+                        <h2>replace()</h2>
+                        <p>IN replace Method pass two argument (old,new)</p> 
+                        <p>replace Method is replace to string value and add new value</p>
+                        <p> this method is case sensitive</p>
+                        <p>it is replace to first match</p>
+                        <p> let str6 = 'hello , JavaScript JavaScript';</p>
+                        <div id="StrReplace">
+                            <script type="module">
+                           import StringTopic from "./Strings.js"
+                           const str = new StringTopic('#StrReplace');
+                           str.source_code('main',str.StrReplace(),'js')
+                            </script>
+                        </div>
+                        <hr>
+                        <h1>split()</h1>
+                        <p>split Method is break to big string in small string than assign in array</p>
+                        <p>in split method pass argument and  according argument break to string </p>
+                        <div id="StrSplit">
+                            <script type="module">
+                           import StringTopic from "./Strings.js"
+                           const str = new StringTopic('#StrSplit');
+                           str.source_code('main',str.StrSplit(),'js')
+                            </script>
+                        </div>
+                        <hr>
+                        <h2>indexOf()</h2>
+                        <div class="note">
+                            <h6>string indexOf method same as array indexOf method</h6>
+                            <h6>we can not user regular expression</h6>
+                        </div>
+                        <p>indexOf() method is take string argument and return index</p>
+                        <p>if has not available string so return -1 </p>
+                        <div id="StrIndexOf">
+                            <script type="module">
+                           import StringTopic from "./Strings.js"
+                           const str = new StringTopic('#StrIndexOf');
+                           str.source_code('main',str.StrIndexOf(),'js')
+                            </script>
+                        </div>
+                       <hr>
+                       <h2>search()</h2>
+                       <p>search() method is search specificity value from string and return position of match</p>
+                       <p>in this method has not <span class="no-need">optional argument</span></p>
+                       <p>we can use regular expression in search() method</p>
+                       <p>search() is always search first value that want to search</p>
+                       <p>this method is similar to indexOf() method</p>
+                       <div id="StrSearch">
+                        <script type="module">
+                       import StringTopic from "./Strings.js"
+                       const str = new StringTopic('#StrSearch');
+                       str.source_code('main',str.StrSearch(),'js')
+                        </script>
+                    </div>
+                       </div>
+                       
                     </div>
                     <!-- tab side bar -->
                     <div class="col-lg-3 Get_scroll CenterY" style="background: #dfdbdb;">
@@ -135,6 +248,7 @@
                                         { name: 'what in string' },
                                         { name: 'String Concatenation ' },
                                         { name: 'Template Literal' },
+                                        { name: 'string method & property' },
                                       ]);
                                     // get element id
                                     topicList.listing('#state_topic');

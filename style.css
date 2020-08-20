@@ -242,3 +242,8 @@ h4::before {
 .test{
   display: none;
 }
+.no-need{
+ color: red;
+ text-decoration: line-through;
+ font-weight: 700;
+}
