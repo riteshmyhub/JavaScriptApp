@@ -33,6 +33,12 @@ export default class StringTopic extends SourceCode {
   StrSearch() {
     return var_StrSearch;
   }
+  StrSlice() {
+    return var_StrSlice;
+  }
+  StrsubStr() {
+    return var_subStr;
+  }
 }
 // _________source code_________
 const Concatenation = `
@@ -92,3 +98,13 @@ const var_StrSearch = `
 let TextSemple = 'this string from java script';
 let findIt = TextSemple.search('from');
 console.log(findIt);// output is 12`;
+
+const var_StrSlice = `
+let text = 'this new saying be by gone';
+let getPart = text.slice(9,15)
+console.log(getPart);//output : saying `;
+
+const var_subStr = `
+let text = 'this new saying be by gone';
+let getPart = text.substr(5,3)
+console.log(getPart);//output : new `;
