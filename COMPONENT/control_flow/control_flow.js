@@ -1,6 +1,6 @@
 import SourceCode from '../../source_code_render.js';
 
-export default class Statements extends SourceCode {
+export default class ControlFlow extends SourceCode {
   syntax() {
     return `${syntax}`;
   }

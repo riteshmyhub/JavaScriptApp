@@ -30,10 +30,11 @@
                     <a class="nav-link mb-2" href="./../VARIABLE/VARIABLE.html">Variables</a>
                     <a class="nav-link mb-2" href="./../DATA_TYPES/DATA_TYPES.html">data types</a>
                     <a class="nav-link mb-2" href="./../OPERATORS/OPERATORS.html">operators</a>
-                    <a class="nav-link mb-2" href="">Statement</a>
-                    <a class="nav-link mb-2" href="./../ES6/ES6.html">es6</a>
+                    <a class="nav-link mb-2" href="">control flow</a>
                     <a class="nav-link mb-2" href="./../Array/ArrayS.html">array</a>
                     <a class="nav-link mb-2" href="./../String/string.html">string</a>
+                    <a class="nav-link mb-2" href="./../number_topic/number_topic.html">number</a>
+                    <a class="nav-link mb-2" href="./../ES6/ES6.html">es6</a>
                 </nav>
             </div>
         </div>
@@ -52,7 +53,7 @@
                         </span>
                     </a>
                 </div>
-                <div class="main_heading">Statements</div>
+                <div class="main_heading">control flow</div>
             </nav>
             <!--  -->
             <div class="container-fluid" id="component" style="height: 100vh;">
@@ -74,9 +75,9 @@
                             <h3>Example</h3>
                             <div id="If" class="SCode">
                                 <script type="module">
-                                    import Statements from './STATEMENT.js';
-                                    const Scode = new Statements('#If');
-                                    Scode.source_code('main', Scode.syntax(),'js');
+                                    import ControlFlow from './control_flow.js';
+                                    const Scode = new ControlFlow('#If');
+                                    Scode.source_code('main', Scode.syntax(), 'js');
                                 </script>
                             </div>
 
@@ -111,7 +112,7 @@
     </div>
 </body>
 <!-- Component.js -->
-<script src="../STATEMENT/STATEMENT.js"></script>
+<script type="module" src="../control_flow/control_flow.js"></script>
 <!-- main.js -->
 <script src="../../main.js"></script>
 <!-- prism js -->
